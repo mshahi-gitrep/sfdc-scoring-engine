@@ -27,19 +27,19 @@ st.markdown(
     """
     <style>
     :root {
-        --color-bg-primary: #07111F;
-        --color-bg-secondary: #0E1728;
-        --color-bg-tertiary: #13203B;
+        --color-bg-primary: #FFFFFF;
+        --color-bg-secondary: #F8FAFC;
+        --color-bg-tertiary: #F1F5F9;
         --color-accent: #3B82F6;
         --color-accent-hover: #2563EB;
-        --color-success: #22C55E;
-        --color-warning: #F59E0B;
-        --color-danger: #EF4444;
-        --color-text-primary: #F8FAFC;
-        --color-text-secondary: #94A3B8;
-        --color-text-muted: #475569;
-        --color-border: rgba(255,255,255,0.08);
-        --color-border-strong: rgba(255,255,255,0.12);
+        --color-success: #16A34A;
+        --color-warning: #EA8C1C;
+        --color-danger: #DC2626;
+        --color-text-primary: #1E293B;
+        --color-text-secondary: #64748B;
+        --color-text-muted: #94A3B8;
+        --color-border: rgba(0,0,0,0.08);
+        --color-border-strong: rgba(0,0,0,0.12);
         --spacing-xs: 8px;
         --spacing-sm: 12px;
         --spacing-md: 16px;
@@ -50,7 +50,7 @@ st.markdown(
         --radius-lg: 16px;
         --radius-xl: 20px;
         --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
-        --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+        --shadow-md: 0 4px 6px rgba(0,0,0,0.08);
         --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
     }
 
@@ -164,17 +164,17 @@ st.markdown(
     }
 
     .badge-success {
-        background: rgba(34, 197, 94, 0.1);
+        background: rgba(22, 163, 74, 0.1);
         color: var(--color-success);
     }
 
     .badge-warning {
-        background: rgba(245, 158, 11, 0.1);
+        background: rgba(234, 140, 28, 0.1);
         color: var(--color-warning);
     }
 
     .badge-danger {
-        background: rgba(239, 68, 68, 0.1);
+        background: rgba(220, 38, 38, 0.1);
         color: var(--color-danger);
     }
 
@@ -188,9 +188,9 @@ st.markdown(
 )
 
 st.sidebar.markdown(
-    "<div style='text-align:center; padding:24px 12px; border-bottom:1px solid rgba(255,255,255,0.08);'>"
+    "<div style='text-align:center; padding:24px 12px; border-bottom:1px solid rgba(0,0,0,0.08);'>"
     "<div style='font-size:1.4rem; font-weight:700; color:#3B82F6; margin-bottom:8px;'>🎯 Readiness Hub</div>"
-    "<p style='font-size:0.85em; color:#94A3B8; margin:0; line-height:1.5;'>Sales readiness intelligence that powers qualified conversations</p>"
+    "<p style='font-size:0.85em; color:#64748B; margin:0; line-height:1.5;'>Sales readiness intelligence that powers qualified conversations</p>"
     "</div>",
     unsafe_allow_html=True
 )
@@ -211,7 +211,7 @@ page = st.sidebar.radio(
 st.sidebar.markdown("")
 st.sidebar.markdown(
     "<div style='padding:16px; border-radius:12px; background:rgba(59,130,246,0.08); border:1px solid rgba(59,130,246,0.2);'>"
-    "<p style='font-size:0.75em; color:#94A3B8; text-align:center; margin:0;'>"
+    "<p style='font-size:0.75em; color:#64748B; text-align:center; margin:0;'>"
     "<strong style=\"color:#3B82F6;\">✓ Real-time</strong> • Deterministic • Fully auditable"
     "</p></div>",
     unsafe_allow_html=True

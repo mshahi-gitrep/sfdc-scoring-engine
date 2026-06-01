@@ -48,7 +48,7 @@ def render_ranked_records():
     st.markdown(
         "<div style='margin-bottom:28px;'>"
         "<h1 style='color:#3B82F6; margin:0 0 8px; font-size:2.4rem;'>Opportunity Workbench</h1>"
-        "<p style='color:#94A3B8; margin:0; font-size:1.05rem; line-height:1.6;'>Deep-dive view of prioritized opportunities. Filter by readiness level, account, seniority, and engagement to build your daily outreach list.</p>"
+        "<p style='color:#64748B; margin:0; font-size:1.05rem; line-height:1.6;'>Deep-dive view of prioritized opportunities. Filter by readiness level, account, seniority, and engagement to build your daily outreach list.</p>"
         "</div>",
         unsafe_allow_html=True
     )
@@ -67,7 +67,7 @@ def render_ranked_records():
     )
 
     st.markdown(
-        "<h3 style='color:#F8FAFC; margin:24px 0 16px; font-size:1.1rem;'>Filters</h3>",
+        "<h3 style='color:#1E293B; margin:24px 0 16px; font-size:1.1rem;'>Filters</h3>",
         unsafe_allow_html=True
     )
 
@@ -139,8 +139,8 @@ def render_ranked_records():
     # LEFT COLUMN: Interactive table with row selection
     with left_col:
         st.markdown(
-            f"<h3 style='color:#F8FAFC; margin:24px 0 16px;'>{len(filtered_df):,} Opportunities Found</h3>"
-            "<p style='color:#94A3B8; margin:-12px 0 16px; font-size:0.95rem;'>Click a row below to view full details →</p>",
+            f"<h3 style='color:#1E293B; margin:24px 0 16px;'>{len(filtered_df):,} Opportunities Found</h3>"
+            "<p style='color:#64748B; margin:-12px 0 16px; font-size:0.95rem;'>Click a row below to view full details →</p>",
             unsafe_allow_html=True
         )
         display_df = filtered_df[["Rank", "full_name", "company_name", "readiness_score", "Recommended Action", "Primary Reason"]].copy()
@@ -172,7 +172,7 @@ def render_ranked_records():
     # RIGHT COLUMN: Dynamic detail panel
     with right_col:
         st.markdown(
-            "<h3 style='color:#F8FAFC; margin:24px 0 16px;'>📋 Prospect Details</h3>",
+            "<h3 style='color:#1E293B; margin:24px 0 16px;'>📋 Prospect Details</h3>",
             unsafe_allow_html=True
         )
         
@@ -180,15 +180,15 @@ def render_ranked_records():
         st.session_state["selected_prospect_id"] = selected_row["master_person_id"]
         
         st.markdown(
-            f"<h2 style='color:#F8FAFC; margin:0 0 4px; font-size:1.4rem;'>{selected_row['full_name']}</h2>"
+            f"<h2 style='color:#1E293B; margin:0 0 4px; font-size:1.4rem;'>{selected_row['full_name']}</h2>"
             f"<p style='color:#3B82F6; margin:0 0 12px; font-weight:600;'>{selected_row['company_name']}</p>",
             unsafe_allow_html=True
         )
         
         st.markdown(
-            f"<div style='padding:16px; border-radius:12px; background:rgba(34,197,94,0.1); border:1px solid rgba(34,197,94,0.2); margin-bottom:12px;'>"
-            f"<p style='margin:0; color:#94A3B8; font-size:0.85rem;'>Readiness Score</p>"
-            f"<p style='margin:4px 0 0; color:#22C55E; font-weight:700; font-size:1.3rem;'>{selected_row['readiness_score']:.1f} / 100</p>"
+            f"<div style='padding:16px; border-radius:12px; background:rgba(22, 163, 74, 0.08); border:1px solid rgba(22, 163, 74, 0.15); margin-bottom:12px;'>"
+            f"<p style='margin:0; color:#64748B; font-size:0.85rem;'>Readiness Score</p>"
+            f"<p style='margin:4px 0 0; color:#16A34A; font-weight:700; font-size:1.3rem;'>{selected_row['readiness_score']:.1f} / 100</p>"
             "</div>",
             unsafe_allow_html=True
         )
@@ -206,10 +206,10 @@ def render_ranked_records():
                 st.markdown(f"**⚠️ Risk:** {selected_row.get('risk_note')}")
         
         st.markdown("---")
-        st.markdown("<h4 style='color:#F8FAFC; margin:12px 0 8px;'>Key Signals</h4>", unsafe_allow_html=True)
+        st.markdown("<h4 style='color:#1E293B; margin:12px 0 8px;'>Key Signals</h4>", unsafe_allow_html=True)
         st.markdown(f"- **Activity:** {int(selected_row.get('days_since_last_response', 0))} days")
         st.markdown(f"- **Type:** {'Strategic' if selected_row.get('is_named_account', False) else 'Standard'}")
-        st.markdown(f"- **Quality:** {'<span style=\"color:#F59E0B;\">⚠️ Cleanup</span>' if selected_row.get('dq_flag') else '<span style=\"color:#22C55E;\">✓ Clean</span>'}", unsafe_allow_html=True)
+        st.markdown(f"- **Quality:** {'<span style=\"color:#EA8C1C;\">⚠️ Cleanup</span>' if selected_row.get('dq_flag') else '<span style=\"color:#16A34A;\">✓ Clean</span>'}", unsafe_allow_html=True)
         
         if selected_row.get("top_positive_reasons"):
             st.markdown("**Strengths:**")
