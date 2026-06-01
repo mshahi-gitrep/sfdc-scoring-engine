@@ -14,6 +14,7 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
+from pipeline.stage04_agentic_explainer import SalesforceAgenticExplainer
 from typing import Dict, List, Tuple, Any
 
 
@@ -40,6 +41,18 @@ def load_unified_data() -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.Da
     accounts_df = pd.read_csv(accounts_path)
     entity_map_df = pd.read_csv(entity_resolution_map_path)
     recommendations_path = "data/processed/person_agent_recommendations.csv"
+
+    # Auto-generate agentic recommendations if missing or stale
+    if not os.path.exists(recommendations_path):
+        st.info("Generating AI recommendation data for the first time...")
+        SalesforceAgenticExplainer().calculate_recommendations()
+    else:
+        src_times = [os.path.getmtime(p) for p in [master_persons_path, person_scores_path, entity_resolution_map_path, campaign_members_path] if os.path.exists(p)]
+        dest_time = os.path.getmtime(recommendations_path)
+        if any(src_time > dest_time for src_time in src_times):
+            st.info("Regenerating AI recommendation data because source datasets changed...")
+            SalesforceAgenticExplainer().calculate_recommendations()
+
     recommendations_df = pd.read_csv(recommendations_path) if os.path.exists(recommendations_path) else pd.DataFrame()
 
     # Enrich raw CampaignMember data with master_person_id from entity resolution output
