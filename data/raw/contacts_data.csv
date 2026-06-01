@@ -1,0 +1,401 @@
+contact_id,account_id,email,first_name,last_name,title,contact_status,job_persona,job_level,mql_date,mkto_contact_score,has_lead_origin,primary_lead_id,no_longer_with_company,has_opted_out
+003NbrnTP3fAbnFbmO,001ZEOQpY7NEkXkSE4,george.broken@megaenterprise.com,George,Broken,Director of Cybersecurity,Active,Security Leadership,Director,2026-04-15 14:22:00,75,True,00QgMXAdx9G81aSQHq,False,False
+003UQSyPx3BpdbIKaR,001NbrnTP3fAbnFbmO,security@highintent.com,Donald,Garcia,Security Operations Manager,Disqualified,Security Management,,2026-01-21 09:10:08,58,True,00QVHWGaub52Ztd26f,False,False
+003Br1VjArnVgxwvqc,0014vvVSNQLlpIn8sr,info@megacorp.com,Jose,Mason,,Stale,,,2026-05-23 07:39:08,0,True,00Qh8l7qgATtLFxJpR,False,False
+003mREpOaUVgAk7Gdp,001kWCRNYdWCscmc5F,info@megacorp.com,Natasha,Decker,Senior Security Analyst,Active,Security Operations,,2026-05-30 20:37:08,35,True,00QrAJOCBnD3XkfFNu,False,False
+003BDsyqHBL3TLboP1,0014HZKjht3X13npgW,info@partnerconsulting.com,Shelly,Hudson,,Active,Partner / Channel,Manager,2026-03-31 04:50:08,0,True,00QjzQDcrr1eoqXKXm,False,False
+003u8zF9OHzlwUMVmI,001MPMDEaIaGr8bYPX,security@wheelerharveyandbarnes.com,Brandy,Mills,,Active,Security Leadership,,2026-05-30 20:37:08,62,True,00QVYJVkGBr9BY8Dzt,False,False
+003sM2wleOV911xCZk,001xG7YXipN2Ig00rV,anthony.rogers@nelsongroup.com,Anthony,Rogers,Security Operations Manager,Active,,Manager,2026-05-10 18:21:08,73,True,00QuXMZ5f0pKGytvuk,False,False
+003PhRfINuhR694fPF,001Wz5FYrsK9EjHvIH,elijah.martinez@combsplc.com,Elijah,Martinez,Cyber Security Manager,Nurture,,,,62,True,00QcR9GLw4yWQdNuuI,False,False
+003PRQeNHpCq5QnuVd,001VHWGaub52Ztd26f,stacy.miller@hayneshillandsmith.com,Stacy,Miller,Cyber Security Manager,Stale,Security Management,,2025-12-08 16:57:08,0,True,00QGF9IyDN8pbWvTMV,False,False
+003rMMfNKKkM3u5c1f,001r4Eh0C3BfQ0tveH,christopher.wright@shepherd.com,Christopher,Wright,,Stale,Security Management,,2026-05-30 20:25:08,84,True,00QhteCGhZIKViF1ZG,True,False
+003zZ5cZWlU2rcsL5u,001CtlRJoWcURYxPY8,christopher.gay@pierce-tran.com,Christopher,Gay,Information Security Manager,Active,Security Management,,2026-04-02 04:50:08,65,True,00Qod4noguDQi78jO2,False,False
+003zrIKTkQIcvNxGRz,0017KUSyekoZy3uUi9,brandon.flynn@bensoninc.com,Brandon,Flynn,Information Security Manager,Disqualified,Security Management,Manager,2026-03-30 18:55:08,65,True,00Q63oeKBP2pcBHUWi,False,False
+003YPX4gfjlGYqyxzJ,0010pKGytvukFhF4vT,john.campos@phamrobinsonandlee.com,John,Campos,Information Security Analyst,Nurture,Security Operations,Individual Contributor,2026-03-21 11:19:08,41,True,00QNdc06PVz0oRaFxM,False,False
+003mQiOj5qOpx4kysR,001CtlRJoWcURYxPY8,roger.lawson@williamsmillerandramos.com,Roger,Lawson,VP Cybersecurity,Active,Security Executive,,2026-04-20 12:08:08,94,True,00Q0f8NR0Xy8ZEurHi,False,False
+0033Wd9GV98gOqY4d9,001zCN2fFr6w6uaVTT,john.gonzales@partnerconsulting.com,John,Gonzales,Cyber Security Manager,Active,Security Management,Manager,2026-05-30 20:37:08,71,True,00QcMpszIdrim2GNXX,False,False
+003WW122qOJDkyMQyy,001ReIdHFJjuGhmKfF,susan.reid@short-garcia.com,Susan,Reid,,Active,,VP,2026-01-05 01:38:08,90,True,00QeQmYjKtTYfII1G4,False,False
+003y4CqpIqK3yn9Ffc,001zNmREpOaUVgAk7G,stacy.miller@hayneshillandsmith.com,Stacy,Miller,Information Security Director,Active,Security Leadership,Director,2026-05-02 10:00:08,78,True,00QXeRzWGJk2mdcdwm,False,False
+003qVkVEVfMNz7xcmx,001pCLxb0lnXv2Rra6,audrey.harrison@vendorsystems.com,Audrey,Harrison,IT Security Manager,Active,Security Management,Manager,,84,True,00QdNJMDmhQGz1j9v9,False,False
+003MRz3FMrWELWZ8wz,001YRsMfihslQFzixl,chelsea.singh@branchtorresandoliver.com,Chelsea,Singh,IT Security Manager,Active,,Manager,2026-02-28 03:31:08,72,True,00QTKkwOc2pHd9PObQ,False,False
+003BWEgOfrZ3mTMT30,001fSEVQOEXfnQsKDG,john.campos@phamrobinsonandlee.com,John,Campos,,Active,,,2025-12-23 04:16:08,89,True,00Q6wPorelEuOQjJY7,False,False
+003JHuD1L1jGBYHCWF,001Q0OsGFUsd37EgEK,rachel.cooper@competitorsec.com,Rachel,Cooper,Information Security Manager,Stale,,Manager,2026-01-22 14:03:08,81,True,00QEQu8VdwjHgEtINv,False,False
+003EMKdnSa5O5ZDNwU,001zKG5mSoyPstUeC9,erika.williams@hughes-schroeder.com,Erika,Williams,Security Operations Manager,Active,,Manager,2026-01-16 09:44:08,62,True,00QMwMtd7YlQVjrztf,False,False
+003VaqzU9Ue591EuCp,0018EE5GXTeLYHteOt,joseph.thomas@taylorllc.com,Joseph,Thomas,,Active,,C-Suite,2026-04-20 20:23:08,0,True,00QNTjlib9MLLKobeW,False,False
+003C1Ha2oKDzeLpHMI,0019HpUlwW1uhw3U3x,phillip.wilson@bennett-velasquez.com,Phillip,Wilson,IT Security Manager,Active,,Manager,2026-04-17 19:58:08,0,True,00QwGxXF6xxV4JOj1l,False,False
+003osmhCXTmMzcvXnN,001pxYyhIKHQI7CRBs,timothy.morales@coleplc.com,Timothy,Morales,VP Cybersecurity,Active,,,2025-12-25 14:06:08,75,True,00Qh1uznmdJ8GfSLWR,False,False
+0035JEKCIYk7egYVxE,001rSvBpDmH5RiMKpP,isaac.steele@wilson-torres.com,Isaac,Steele,Chief Security Officer,Nurture,Security Executive,,2025-12-07 00:26:08,88,True,00QVLhgYXuOXHyzMH8,False,False
+003NUhkysUUHxRDi1a,0014I8IipmO50fSlqP,nicole.davis@perryhayesandschultz.com,Nicole,Davis,IT Security Manager,Active,Security Management,,2026-01-13 20:44:08,80,True,00QTL4TOwkWolGc97K,False,False
+003TEb4MpOaN4YgLZd,001PKY6gob2I4ndZ4s,karen.lawrence@mosleyandsons.com,Karen,Lawrence,Senior Security Analyst,Active,Security Operations,,2026-01-04 12:38:08,57,True,00Qcb9oyXNE7Y7bvuS,False,False
+003cAq6HXWf2Td6P3g,001MPMDEaIaGr8bYPX,angela.sloan@whiteinc.com,Angela,Sloan,,Active,,,2026-01-01 02:13:08,70,True,00QUQznwo9aPkCJK8C,False,False
+003DATblbXZGuJOWEP,001YTH8xIZM1JRcore,whitney.parsons@richardson-bonilla.com,Whitney,Parsons,,Active,Security Operations,,2026-04-02 08:54:08,38,True,00QQHsMX6Y6e3Ce3r7,False,False
+0034BQT3iIty0BfdNK,001Q0OsGFUsd37EgEK,bradley.hall@dawsoninc.com,Bradley,Hall,Director Security Operations,Stale,,,2025-12-30 02:46:08,65,True,00QmRP8jB8Hhb5V65j,False,False
+003XtE9A4mqbWrINcS,001Q0OsGFUsd37EgEK,kenneth.flores@lloydinc.com,Kenneth,Flores,,Active,,Manager,2026-05-01 19:25:08,91,True,00QMVAJMGwjjQsAtZd,False,False
+003ngnrz1dHRhHDprW,001DpLm4IWxHwqFEg8,pamela.moore@outlook.com,Pamela,Moore,Director Security Operations,Active,Security Leadership,,2026-02-27 02:50:08,91,True,00Q3tsd73P2y00oJFh,False,False
+003qUxAmnZTllXb8oB,001ltn3Wd9GV98gOqY,tammy.mcdaniel@brownhughesandmills.com,Tammy,Mcdaniel,Director of Information Security,Nurture,,,2026-04-09 10:24:08,69,True,00Q2n65OM48mRkyAqf,False,False
+003694Xi1XrXUHLfpo,001mn1uj3a1iipkOba,chelsea.johnson@reyes-washington.com,Chelsea,Johnson,,Disqualified,Security Executive,,2026-05-30 20:37:08,88,True,00QGJzeVP3bQQyK6Zj,False,False
+003fVjAh3TBEbBpsZy,001GOAwwln6Eoie0gV,john.burns@gmail.com,John,Burns,,Nurture,,VP,2026-02-25 02:43:08,88,True,00QkDQ17LEM8wPQysh,False,False
+003sAFT0qFhU6BJavo,001zNmREpOaUVgAk7G,henry.miller@stewartltd.com,Henry,Miller,Director Security Operations,Active,Security Leadership,Director,2026-01-19 14:21:08,61,True,00QzN3MMBvYOW2fHyS,False,False
+003IrAL7tQvqUCp8vC,001b5ZqlRtva1JyiNb,steven.garcia@hallhintonandphillips.com,Steven,Garcia,,Active,Security Management,Manager,2025-12-08 03:44:08,0,True,00Q7IcY7MOkd5qpQ90,False,False
+003loOwf0FNW5gecmm,0012ODH0A2TVwyJmIe,angela.reynolds@morenoinc.com,Angela,Reynolds,Information Security Manager,Stale,,Manager,2026-02-04 10:20:08,56,True,00QXOm3ConAxj0pfUs,True,False
+003msGCwau4y9izUy4,001NbrnTP3fAbnFbmO,james.christensen@thomas-santiago.com,James,Christensen,VP Cybersecurity,Active,Security Executive,VP,2026-04-25 18:33:08,86,True,00Qbi89JX4Jyx6dxDu,False,False
+003MYkp3TC4lJy6o1q,001GoEd9Sf53GRx8ff,jodi.hancock@jensenltd.com,Jodi,Hancock,,Active,Security Executive,VP,2026-02-12 14:53:08,82,True,00QtYPjJtmSCm9BZLp,False,False
+003hBDG7Xkq7r7d8lY,001GoEd9Sf53GRx8ff,emily.ward@dixonhaleandgilbert.com,Emily,Ward,,Active,,,2026-03-23 20:09:08,25,True,00QLc82YlBg6MsDVHj,False,False
+0032qEwq4XW18WjjBX,001ylh0CPNLbWphJeV,emily.nicholson@collierwrightanddavis.com,Emily,Nicholson,Director of Cybersecurity,Active,Security Leadership,,2026-03-23 05:45:08,61,True,00Qo2x2Zgkgg7wMh55,False,False
+003WYnfwm0wDig4w0W,001YCFCdCYSyYUJcvd,thomas.gomez@spencerandsons.com,Thomas,Gomez,Cyber Security Analyst,Nurture,Security Operations,Individual Contributor,2026-01-18 07:11:08,55,True,00QhATiuhVvED8LNi6,False,False
+003xJ0n2PvDHYglg7y,0014miS40ubK4W017x,edward.shaffer@marshltd.com,Edward,Shaffer,,Active,,,2026-01-11 00:28:08,73,True,00QihJc1y14hw07xQF,False,False
+0034NWy6WFqOt34Pa4,001LT6mnOjkeaBKsoR,caleb.johns@millerjacksonandgarcia.com,Caleb,Johns,Cyber Security Manager,Stale,Security Operations,Manager,,0,True,00QR64gfZfb5gUMHNF,False,False
+003krLGgdpgh3JoGr2,001kfFNuYUPnmbpD0e,marcus.soto@maldonaod-collins.com,Marcus,Soto,,Active,Security Management,Manager,2026-02-17 20:19:08,72,True,00Q6JgCggbCqDGvhIv,False,False
+0031sNLjVHWGaub52Z,001nipuaUkxRFZXe1c,abigail.king@garnerplc.com,Abigail,King,CISO,Active,Security Executive,C-Suite,2025-12-21 05:10:08,74,True,00QynZQEkmNRral4MT,False,False
+003ooJeTY8HhO6kGL7,001D04wzInjq5Jzjux,tony.pearson@castillonadsons.com,Tony,Pearson,,Active,,VP,2026-02-02 23:34:08,98,True,00QL39iyOOe6mRY31B,False,False
+003uyMwOWYLhJtqlCB,0014d9n0Xv00kKXR4b,daniel.brown@brookstoddandfarrell.com,Daniel,Brown,VP & CISO,Active,Security Executive,C-Suite,2026-05-26 16:48:08,89,True,00Q1W5UYI75r9HASVq,False,False
+003Tmt9OBGhnuKoneN,001JXke1Mo4iCppaX3,ann.marquez@masongroup.com,Ann,Marquez,,Disqualified,,VP,2026-04-21 12:05:08,80,True,00QMjc54bLYFWFKvnZ,True,False
+003buFrEHS2JpDzfOv,0012WNl7A4dhjkuRv6,kevin.burns@wrightplc.com,Kevin,Burns,,Nurture,Security Operations,,2026-03-21 11:17:08,0,True,00QUhoT2wvF4OLBzJZ,False,False
+003CTP9gyv1plBArp5,001ciuDCLFuMk9TsuZ,james.bass@carrollchoiandcollier.com,James,Bass,Director of Information Security,Nurture,Security Leadership,Director,2026-02-03 20:30:08,64,True,00QaPzPdlVjqkcLQzN,False,False
+003ybF5276m8Uiu78t,001HNdc06PVz0oRaFx,maria.turner@wiley-watson.com,Maria,Turner,Vice President Information Security,Nurture,,,2026-02-20 15:48:08,91,True,00Q3lwkHUBMKRTDpSL,False,False
+003gOHafUozD13kay5,001jQzW52TdimuPGtk,lauren.roberts@yahoo.com,Lauren,Roberts,Vice President Information Security,Active,,VP,2026-05-01 10:46:08,79,True,00QismpVDg2dWeDBDg,False,False
+003tgH6chve15Omk9o,001TYIKIuhvPU1S8Lv,heather.contreras@chavezcarneyandhammond.com,Heather,Contreras,,Nurture,,C-Suite,2026-01-07 19:25:08,88,True,00QvGQYAbJaZbnAqnP,False,False
+003l9XwpgCaXy1v6ZA,001DXQsedBEmLtST18,philip.brewer@krause-gonzalez.com,Philip,Brewer,SecOps Manager,Active,Security Management,,2026-01-06 14:50:08,87,True,00Qb26h6b10mdBmVKh,False,False
+003fz2golOu8PGJ2Vi,001tTThRRk7GWSkhWq,deborah.diaz@turnerbrownandshea.com,Deborah,Diaz,Vice President Information Security,Active,Security Executive,VP,2026-04-26 23:55:08,81,True,00QgD81HiLNtD3hOwM,False,False
+003pj9bnRn2BYjs71D,001ZRcZufpwFPq9bzC,anthony.robertson@williamsmedinaandmoore.com,Anthony,Robertson,IT Security Manager,Active,,,2026-05-23 10:23:08,71,True,00Q4RIUHyRmfL2zqSH,False,False
+0039ISjs8JHUdKF0j7,0014HZKjht3X13npgW,jerry.jenkins@whiteheadlanenadtran.com,Jerry,Jenkins,Information Security Director,Active,Security Leadership,Director,,62,True,00QGTTpLVllOEhf6J6,False,False
+003vlG3EL9565HyBhI,001tUJrhQR6FEecAtp,vickie.quinn@villanuevabutlerandwilliams.com,Vickie,Quinn,Senior Security Analyst,Active,Security Operations,,2026-05-09 11:38:08,63,True,00Qb4I17lMlnv24LJ3,False,False
+0030FQcnClntSEJMcx,0019enq522wjZRL9Oa,antonio.simmons@yahoo.com,Antonio,Simmons,Security Operations Manager,Active,Security Management,Manager,2025-12-22 14:50:08,76,True,00QgILs9VVRGc6tK3H,False,False
+003Smnlm2OM3HVzNni,001pxYyhIKHQI7CRBs,jennifer.mitchell@montgomeryandsons.com,Jennifer,Mitchell,Information Security Manager,Nurture,Security Management,,2026-03-10 12:17:08,68,True,00QrT7ypjTAscz209h,False,False
+003e1z6JJcfOJtqPtq,001QzkChMbyIbNiCdx,austin.stewart@lopez-hart.com,Austin,Stewart,,Active,Security Executive,VP,2026-02-21 21:08:08,92,True,00QsZWMdnIjxGlBRxP,False,False
+003JDbwp6Q43N3DrvX,001ioQaRY9AiexTgt2,joseph.barnes@howard.com,Joseph,Barnes,Vice President Security,Active,,,2026-03-08 02:14:08,85,True,00QEA0EPvg7RLiGEnE,False,False
+003OC56aMIgHFivepr,001FVr9Qh8yXv6UmFF,michael.ferguson@marshnelsonandwolfe.com,Michael,Ferguson,IT Security Manager,Active,,Manager,2026-04-01 10:28:08,72,True,00Q7WJ4RLYpI3t2xjt,False,False
+003rIAeq6wy442hkJP,001ZEOQpY7NEkXkSE4,ashley.alvarez@leonardkellerandjennings.com,Ashley,Alvarez,,Active,Security Executive,,2026-01-26 17:11:08,86,True,00Qkxsn1KESY6hki8L,False,False
+003S3x27QIOeSbJwbB,001gJSoFc1pDxj51I4,steven.castro@jonhsonllc.com,Steven,Castro,CISO,Nurture,,C-Suite,2026-03-19 12:12:08,68,True,00QBj30UbVmPB2vbFy,False,False
+003vuwXK2VAFPHUF9j,001EBqUhArQEPcyLas,ruth.welch@villarrealandsons.com,Ruth,Welch,Director of Cybersecurity,Active,Security Leadership,Director,2026-02-24 15:16:08,72,True,00QCxOALvFD51Dvl5k,False,False
+003z8uwtE95ynAopXu,001Fvbgz7h6itCmDDB,dennis.thompson@hayes-russo.com,Dennis,Thompson,Director Security Operations,Disqualified,,,2026-05-29 09:12:08,66,True,00QdKXpZI0n7CjgHwU,False,False
+003kYHpb4XXfdjjYHD,001zCN2fFr6w6uaVTT,jorge.edwards@page-hamilton.com,Jorge,Edwards,,Nurture,Security Executive,C-Suite,2026-05-11 13:47:08,87,True,00Qr9QNejh67eVVqlV,False,False
+00395OzZ81f0KIhiE9,0014I8IipmO50fSlqP,kathryn.hernandez@stewartgroup.com,Kathryn,Hernandez,IT Security Manager,Active,Security Management,Manager,2026-04-23 20:01:08,80,True,00Qb0XAYWykMDKR8UZ,False,False
+003aYsP6ihgIqLSmNq,001OQdhtzF3Rth4sMn,anna.tucker@williamson.com,Anna,Tucker,Vice President Information Security,Active,,,2026-03-22 05:13:08,81,True,00QPiyQTGOPtsb2UiS,False,False
+003F8fr9ompgDgiCXP,001PKY6gob2I4ndZ4s,mary.riley@sanchezltd.com,Mary,Riley,,Nurture,Security Operations,Individual Contributor,2026-03-21 23:28:08,32,True,00QkgLagUoFPiEJvhn,False,False
+003vkeQuHu9D4vkJzK,0011Id9Z850kEnydx9,matthew.stevens@bates.com,Matthew,Stevens,,Stale,,,2026-04-22 15:03:08,80,True,00QcPk3kU0qlGCyiZL,True,False
+003b8yAtuKUXdKPhpb,001DXQsedBEmLtST18,michael.jimenez@hayes-reynolds.com,Michael,Jimenez,Information Security Director,Stale,,Director,2026-04-14 15:53:08,63,True,00Qv1PBRKEmIu9XWLj,False,True
+003S4kA9ObCFYHkfdj,001eoPni6JDWYlgAAC,kevin.ochoa@gonzalezgonzalezandmurphy.com,Kevin,Ochoa,,Nurture,,,2026-05-01 02:09:08,0,True,00QQYxIszxgnrdDqok,False,False
+0038NwqFthIUF2wU6c,001NbrnTP3fAbnFbmO,elaine.keller@williamswaltersandmills.com,Elaine,Keller,,Active,Security Management,Manager,2026-02-01 00:08:08,67,True,00QBWaXB9zqkYeT5dG,False,False
+003OEyY6J8GFdJ5khY,001zuLWOefQrSO42uK,kyle.rojas@smithinc.com,Kyle,Rojas,,Active,,Individual Contributor,,41,True,00QtJiDrBixcfTLUxp,False,False
+003VNqTIAae24HZKjh,001nipuaUkxRFZXe1c,jennifer.sanchez@millerhardyandcollins.com,Jennifer,Sanchez,Chief Information Security Officer,Active,,C-Suite,2026-03-02 07:10:08,88,True,00QwImAmIxSJzyCaoA,False,False
+003u2IWHuJlkTVtyo0,001ITGgrscAXCg4KbF,vanessa.owens@collier-davies.com,Vanessa,Owens,,Nurture,Security Executive,VP,2026-01-04 03:19:08,87,True,00QnufaWJN30cpN7Iz,False,False
+003Y2bTu5X1YqWg21n,0014vvVSNQLlpIn8sr,danielle.johnson@rasmussenllc.com,Danielle,Johnson,,Stale,,VP,2026-03-12 10:00:00,44,True,00Q3X13npgW2zMj518,False,False
+003qgATtLFxJpRa5HS,001Ybd3Bh4ZucCkJYy,joshua.walker@burkemartinezandriggs.com,Joshua,Walker,Cybersecurity Manager,Nurture,Security Management,Director,2026-03-12 10:00:00,65,True,00Qblu17rNy8H6h8l7,False,False
+003MsHarAJOCBnD3Xk,0012zMj518Y2bTu5X1,jill.rhodes@wattsrobinsonandnguyen.com,Jill,Rhodes,Director of Information Security,Stale,,Director,2026-03-12 10:00:00,64,True,00QPut0SstzyshA6P3,True,False
+003pOaUVgAk7Gdp0CX,0015qOpx4kysRoORaD,patricia.miller@meadowsplc.com,Patricia,Miller,Senior SOC Analyst,Active,,,2026-03-12 10:00:00,56,True,00QYUPnmbpD0ezNmRE,False,False
+003rqtHioRRdzHzmA4,001xsyf348JkxisEdA,robert.johnson@schmidthansenandstewart.com,Robert,Johnson,,Stale,,Director,2026-03-12 10:00:00,51,True,00QSFZH3UDqpNVGMre,False,False
+003XS058H4KPfA1lqu,001jQzW52TdimuPGtk,jeffery.wagner@rossllc.com,Jeffery,Wagner,,Nurture,,VP,2026-03-12 10:00:00,75,True,00QD6sy3ZHTX3EqEyP,False,False
+003oDh6CpwL7SWktJ5,001w6AQOfMXSfjSNTt,anthony.gonzalez@holmeswilliamsandwright.com,Anthony,Gonzalez,Threat Analyst,Nurture,,Director,2026-03-12 10:00:00,57,True,00Q6AZDUd7ne7cbp0M,False,False
+003Yg7NZRBT7qYHDBT,001mn1uj3a1iipkOba,debra.gardner@russellgroup.com,Debra,Gardner,Senior SOC Analyst,Active,Security Leadership,,2026-03-12 10:00:00,61,True,00QQMgV0Lh8WvAwFv0,False,False
+0036fSEVQOEXfnQsKD,0014I8IipmO50fSlqP,jeffrey.lawrence@lawsonmorrisandramos.com,Jeffrey,Lawrence,SecOps Manager,Active,,,2026-03-12 10:00:00,63,True,00Q2pCLxb0lnXv2Rra,False,False
+003gmolaHr8IRh1E2J,001GNdzSgVaI5z52Dm,lisa.smith@white-estes.com,Lisa,Smith,Threat Analyst,Active,Security Operations,C-Suite,2026-03-12 10:00:00,60,True,00QRqphlhHVlnES8Gr,False,True
+003nGBB19sMLT6mnOj,001Is9hVLXnGBB19sM,linda.wolfe@arroyomillerandtucker.com,Linda,Wolfe,,Stale,Security Leadership,Director,2026-03-12 10:00:00,56,True,00Q6DYyeNdjIs9hVLX,True,False
+0034ZektUJrhQR6FEe,0019OBGhnuKoneNo41,matthew.moore@blairplc.com,Matthew,Moore,Director of Information Security,Stale,,VP,2026-03-12 10:00:00,60,True,00QKsoRRCQ5WMO5AHO,False,True
+003Y8DztgjzEPyVcfp,001dp0CXP9K63LSFZH,susan.rogers@snydercamposandcallahan.com,Susan,Rogers,Director of Information Security,Stale,,Individual Contributor,2026-03-12 10:00:00,63,True,00QoP1KbVYJVkGBr9B,False,False
+003XStazn0h6Oj5sRz,0010DlgkCplTXJUk13,christopher.davis@joycewilsonandlam.com,Christopher,Davis,,Disqualified,Security Executive,Director,2026-03-12 10:00:00,53,True,00Q1CdGMEBdqir2EbN,False,False
+003jHvIHCtlRJoWcUR,0019HpUlwW1uhw3U3x,melanie.munoz@davisgroup.com,Melanie,Munoz,SecOps Manager,Nurture,,,2026-03-12 10:00:00,48,True,00Q5F21rWz5FYrsK9E,False,False
+003qMyeuPH7M3EHMoQ,001TYIKIuhvPU1S8Lv,lindsay.blair@stanleytuckerandlee.com,Lindsay,Blair,Security Analyst,Stale,Security Operations,Manager,2026-03-12 10:00:00,36,True,00Qj7h7ug0g4ai18eW,False,False
+0031Mo4iCppaX3QjBv,001AEeppMKmgs6uMXu,amanda.dudley@salazar-ball.com,Amanda,Dudley,Senior SOC Analyst,Stale,Security Operations,C-Suite,2026-03-12 10:00:00,60,True,00QN2BR4cXsxjGJXke,False,False
+003dLE4rXLvNMQSOZM,001YRsMfihslQFzixl,nicholas.arnold@brown-wall.com,Nicholas,Arnold,,Stale,,VP,2026-03-12 10:00:00,82,True,00Q0mxDoJJ9s8OrJQU,False,False
+003s1XDeUnPPy0Ifyq,001ioRRdzHzmA4KR1V,maria.montgomery@carlson-cruz.com,Maria,Montgomery,Chief Security Officer,Disqualified,Security Executive,,2026-03-12 10:00:00,64,True,00Qwi4uzmW2wFqk467,False,False
+003cc9hoHyx6RHKT2O,001OQdhtzF3Rth4sMn,michelle.ray@smith-frost.com,Michelle,Ray,Cybersecurity Manager,Nurture,,Director,2026-03-12 10:00:00,50,True,00QxNxPDM6uLONCROh,False,False
+003NLbWphJeVmn1uj3,001NbrnTP3fAbnFbmO,janet.williams@rodriguezfigueroaandsanchez.com,Janet,Williams,VP Security,Nurture,Security Executive,,2026-03-12 10:00:00,68,True,00QwB61gQH8wylh0CP,False,False
+003FgF6cW1GC7dDyQE,001ciuDCLFuMk9TsuZ,jeremy.roberts@gonzalezgroup.com,Jeremy,Roberts,Director of Cybersecurity,Active,Security Leadership,Director,2026-03-12 10:00:00,59,True,00QpkObaWoukdTGUDW,False,False
+003A3zZyTttp7QDffA,001bQknlr2cMpszIdr,christopher.hall@reedgroup.com,Christopher,Hall,Senior SOC Analyst,Stale,Security Operations,VP,2026-03-12 10:00:00,70,True,00QhMKSxLsFAXhO2I1,False,False
+003g0wVJY08YMNb5Zq,001RCQ5WMO5AHO4Zek,craig.ramirez@andersongroup.com,Craig,Ramirez,Senior SOC Analyst,Stale,Security Operations,Individual Contributor,2026-03-12 10:00:00,50,True,00QIuhvPU1S8LvJnOn,False,False
+003fdjMPqPEBqUhArQ,001ZFfPliupqoU7sSa,cynthia.diaz@scottltd.com,Cynthia,Diaz,,Active,Security Operations,Manager,2026-03-12 10:00:00,64,True,00Qa1JyiNbUnAvwSWJ,False,False
+0031cb51JJRzhbuXMZ,00150OXirZRiRBaepZ,mitchell.clark@garciahumphreyandbaker.com,Mitchell,Clark,Security Research Engineer,Active,Non-Prospect,Director,2026-03-12 10:00:00,80,True,00QasnipuaUkxRFZXe,False,False
+003gpkjVe6MCIJQ2N9,001INM1MjeBsrdFtCd,joseph.zuniga@donovan-harris.com,Joseph,Zuniga,,Active,Security Management,C-Suite,2026-03-12 10:00:00,51,True,00Qye1UnWeNGmWv7Oj,False,False
+0037Tc4JlLF7BYZ8fO,0019OBGhnuKoneNo41,deborah.lynch@blairplc.com,Deborah,Lynch,Director of Cybersecurity,Nurture,,,2026-03-12 10:00:00,91,True,00QNXKveCcwrN8fKxJ,False,False
+003LjfP4tOPhRfINuh,0012VbYqdSJeCwEJwp,george.daniel@howellandsons.com,George,Daniel,Security Director,Disqualified,,Individual Contributor,2026-03-12 10:00:00,83,True,00QLw4yWQdNuuIxp07,False,False
+003GP2MLjlQM3ScwS8,001Fvbgz7h6itCmDDB,frank.gray@mitchellnelsonandflores.com,Frank,Gray,VP Security,Active,,,2026-03-12 10:00:00,59,True,00QPFbt6vVl9jsWFHT,False,False
+0032dDx5SFhfjBFZf4,001WJSKkMM0jQb6gbt,veronica.bowman@walkerltd.com,Veronica,Bowman,SecOps Manager,Stale,Security Management,VP,2026-03-12 10:00:00,83,True,00Qo7W4mQJBVWFzkmL,False,False
+003M4bnj6LAWohoNMd,001ReIdHFJjuGhmKfF,angela.cohen@diazinc.com,Angela,Cohen,Cybersecurity Manager,Active,,Director,2026-03-12 10:00:00,55,True,00QxxfntgSujc4DZVD,False,False
+003cxxUweoOgKUivuN,001qpepgaxT82ExHgD,megan.parsons@christensenplc.com,Megan,Parsons,Security Director,Stale,,,2026-03-12 10:00:00,55,True,00QSsavJlPGw7HWFb2,False,False
+003wW1uhw3U3x8EE5G,0012zMj518Y2bTu5X1,jeremy.johnson@wattsrobinsonandnguyen.com,Jeremy,Johnson,,Stale,,,2026-03-12 10:00:00,68,True,00QYdWCscmc5F9HpUl,True,False
+0036eNwXQ7iLWceWwx,0017KUSyekoZy3uUi9,leslie.adams@staffordinc.com,Leslie,Adams,Information Security Manager,Active,,,2026-03-12 10:00:00,80,True,00QHteOtLAQvc1v9r8,False,True
+0039r4Eh0C3BfQ0tve,001D04wzInjq5Jzjux,jason.hahn@harveydavisandcrane.com,Jason,Hahn,Director of Information Security,Active,,,2026-03-12 10:00:00,62,True,00QxVJGyOphTExIqqB,False,False
+003t9SGVZe8NBQv2WN,001RCQ5WMO5AHO4Zek,nancy.edwards@andersongroup.com,Nancy,Edwards,Security Analyst,Active,,Manager,2026-03-12 10:00:00,39,True,00Q5NXFhmiXbIwXILf,False,False
+003Fk6jOSL0IZbcNJO,0016ygsij6X7Ok8R5W,diana.foster@marshall-petersen.com,Diana,Foster,Chief Security Officer,Active,Security Executive,,2026-03-12 10:00:00,52,True,00QhjkuRv630pNIhsH,False,False
+0039vyVFgohBid61z7,001fSEVQOEXfnQsKDG,robin.ellis@ryanplc.com,Robin,Ellis,SecOps Manager,Active,,,2026-03-12 10:00:00,68,True,00QHNspYzCQjzCvi1t,False,False
+003ragiqwzcdIwrxBI,001g2luCq1GNLLKv0M,joseph.wright@russell-daniels.com,Joseph,Wright,,Active,Security Operations,C-Suite,2026-03-12 10:00:00,60,True,00Qj9C2EfyCoKdrL0P,False,False
+003tyM0KFFEIDbugzt,001iYeJA7oqtXRTtqe,anna.baker@johnston-odonnell.com,Anna,Baker,SOC Analyst,Active,Security Operations,,2026-03-12 10:00:00,70,True,00Q9IwiLyccSXGj3i5,False,True
+003zzmFLD0TRGI9Dx7,0014vvVSNQLlpIn8sr,brenda.hurst@rasmussenllc.com,Brenda,Hurst,Senior SOC Analyst,Stale,,,2026-03-12 10:00:00,69,True,00Q8JodDGSWxYpJRlB,False,False
+0035SrJH3yvVjc7e5O,001im2GNXX9WwHE4Fy,reginald.robinson@woodhunterandpeterson.com,Reginald,Robinson,,Nurture,,Individual Contributor,2026-03-12 10:00:00,60,True,00QQXqE7rs68VRQEDI,False,False
+0038jO2DOUrrdVOoT0,001EeVVhDIq2AnHTmt,whitney.hicks@abbott-munoz.com,Whitney,Hicks,Security Analyst,Stale,,,2026-03-12 10:00:00,40,True,00QIqgTod4noguDQi7,False,True
+0033iFqYuTOSausPlL,001VIhhWZwZcSH9gZU,christopher.williams@smith-bell.com,Christopher,Williams,SecOps Manager,Active,Security Management,VP,2026-03-12 10:00:00,73,True,00QcZWlU2rcsL5uCNG,False,False
+003htzF3Rth4sMnijU,001QyU7AaqFGJJByVK,daniel.burton@hillinc.com,Daniel,Burton,Director of Information Security,Stale,Security Leadership,VP,2026-03-12 10:00:00,67,True,00QPliupqoU7sSaOQd,True,False
+003juGhmKfFYCFCdCY,001iYeJA7oqtXRTtqe,laura.henderson@johnston-odonnell.com,Laura,Henderson,Information Security Manager,Stale,,,2026-03-12 10:00:00,83,True,00QHPnpU2fBReIdHFJ,False,False
+0039x14xQPHOvlHGTn,001NbrnTP3fAbnFbmO,bryan.james@rodriguezfigueroaandsanchez.com,Bryan,James,Director of Cybersecurity,Active,Security Leadership,,2026-03-12 10:00:00,37,True,00QJcvd95e5bzVV8OA,False,False
+003KBP2pcBHUWi9o4J,001w6AQOfMXSfjSNTt,wendy.rice@holmeswilliamsandwright.com,Wendy,Rice,Cybersecurity Manager,Stale,,Manager,2026-03-12 10:00:00,47,True,00QAxoCjl2VbOM63oe,False,False
+003GRzslHon1iCdzzG,001LAQvc1v9r86eNwX,tasha.valencia@walshllc.com,Tasha,Valencia,,Active,Security Executive,VP,2026-03-12 10:00:00,51,True,00Q29GzrIKTkQIcvNx,False,False
+003s4nlTUU4RRyotrC,0017W491h1pSZVPEJq,alexander.le@hurstfreemanandnelson.com,Alexander,Le,,Nurture,Security Operations,,2026-03-12 10:00:00,70,True,00QBxHZdxLceXKPnm4,False,False
+003moJpI6uVESTCTvi,001ZEOQpY7NEkXkSE4,erin.herrera@chambersandsons.com,Erin,Herrera,,Active,,,2026-03-12 10:00:00,54,True,00QCXSVtmtc1TbIKSs,False,False
+00354OaGzbSHrFRA6l,001TtLFxJpRa5HSUPw,joseph.davidson@walteredwardsandrios.com,Joseph,Davidson,,Active,Partner / Channel,Manager,2026-03-12 10:00:00,60,True,00Q7G0eYdaiNejnCdN,False,False
+003IdakEAWJ1fGcn13,0017tO4fJHS64k2k59,daniel.graham@johnson-carlson.com,Daniel,Graham,,Nurture,Security Management,,2026-03-12 10:00:00,90,True,00QYqyxzJ9oQ0O1Vfx,False,False
+0033uUi9SF8dBZvV7y,0017nJ6iUo8k2fRN2B,shawn.mckay@ramirezgroup.com,Shawn,Mckay,,Active,Security Operations,,2026-03-12 10:00:00,53,True,00Q3Ic5t7KUSyekoZy,False,False
+003tgatwqilBIzbvfL,001Ze11MFCIX3BYOtD,nancy.baker@edwardsbakerandanderson.com,Nancy,Baker,,Nurture,Security Management,,2026-03-12 10:00:00,63,True,00QEw6AQOfMXSfjSNT,False,False
+0036SEMCiay0x1BAZO,001pxYyhIKHQI7CRBs,vincent.white@manninggroup.com,Vincent,White,,Disqualified,,,2026-03-12 10:00:00,86,True,00QSI9pGQkqqjkrsWw,False,False
+003lVbT6mXZe0XPisp,001pCLxb0lnXv2Rra6,rita.harrell@romerogonzalezandbrooks.com,Rita,Harrell,Security Director,Active,Security Leadership,Manager,2026-03-12 10:00:00,66,True,00QDlytTN8WurWw5m9,False,False
+003kLINO7uXggnUIQn,001DN8pbWvTMVTucHY,kenneth.fowler@harris-walters.com,Kenneth,Fowler,Threat Analyst,Active,,,2026-03-12 10:00:00,51,True,00QLKH51zc8RYK4gpP,False,False
+003CecSbvgX5TFIuAC,00130S5NXFhmiXbIwX,chelsea.hernandez@tranjordanandwilliams.com,Chelsea,Hernandez,,Nurture,,VP,2026-03-12 10:00:00,41,True,00Qj9Ds5fZTvvWGvgS,False,False
+003q1GNLLKv0MYRsMf,001nuVxUZpfbH9vOWO,kathryn.ryan@dyerpotterandmack.com,Kathryn,Ryan,,Nurture,Security Management,VP,2026-03-12 10:00:00,87,True,00QbMmKyRmUYdg2luC,False,False
+003dwaiY7FEQz0EfbV,001JnOng0wVJY08YMN,kimberly.moreno@novakplc.com,Kimberly,Moreno,,Active,Security Executive,Individual Contributor,2026-03-12 10:00:00,52,True,00QQFzixlNQO9IEitB,False,False
+003ZUs9BvYB9WoYKvS,001NQO9IEitBdwaiY7,aaron.nguyen@stein-silva.com,Aaron,Nguyen,,Active,Security Management,Director,2026-03-12 10:00:00,66,True,00QCUVIhhWZwZcSH9g,False,False
+003491h1pSZVPEJqzC,001FEQz0EfbVsrHkCU,andrew.hickman@smithgilmoreandjohnston.com,Andrew,Hickman,Partner Alliance Manager,Nurture,,,2026-03-12 10:00:00,73,True,00QmdvrHuRrq19Qf7W,False,False
+003EurHi0W3VcMZb5j,001jQzW52TdimuPGtk,natasha.decker@rossllc.com,Natasha,Decker,Information Security Manager,Active,Security Management,,2026-03-12 10:00:00,53,True,00Q2CEK10f8NR0Xy8Z,False,False
+003ffneKGBavh1RDof,0013MsHarAJOCBnD3X,kyle.brown@bakerandsons.com,Kyle,Brown,,Stale,,,2026-03-12 10:00:00,72,True,00Q42s22fwfPOdMTUA,False,False
+003fgUKx7tirfILLWQ,001CPwdHnAnqZuJJEv,natalie.arroyo@yatesramseyandpittman.com,Natalie,Arroyo,,Nurture,,Manager,2026-03-12 10:00:00,86,True,00QVUi9iGaOBSMjzQ1,False,False
+003AHkD9eKan56yrSV,001DXQsedBEmLtST18,christopher.tucker@hancockandsons.com,Christopher,Tucker,,Stale,Security Operations,,2026-03-12 10:00:00,35,True,00QyOWXoxoNe3awtx0,True,False
+003fACLtTThRRk7GWS,0018GrgmolaHr8IRh1,chad.hodges@rodriguezllc.com,Chad,Hodges,,Disqualified,,Individual Contributor,2026-03-12 10:00:00,91,True,00QrtFmYHyNZQeRT0d,False,False
+003gJSoFc1pDxj51I4,001Ybd3Bh4ZucCkJYy,katie.anderson@burkemartinezandriggs.com,Katie,Anderson,Cybersecurity Manager,Stale,Security Management,C-Suite,2026-03-12 10:00:00,52,True,00Q2VbYqdSJeCwEJwp,False,False
+003IamIsMCKEVm3Vpa,001ILft9SGVZe8NBQv,thomas.pierce@nolan-flynn.com,Thomas,Pierce,,Stale,Security Management,,2026-03-12 10:00:00,82,True,00QSqexF3lX87eCr0u,True,False
+0033GRx8ffiYeJA7oq,0010pKGytvukFhF4vT,joseph.brennan@sanchezwheelerandharvey.com,Joseph,Brennan,SecOps Manager,Active,,Manager,2026-03-12 10:00:00,57,True,00Q26aO0TgGoEd9Sf5,False,False
+003jQZRcZufpwFPq9b,00130S5NXFhmiXbIwX,rodney.lewis@tranjordanandwilliams.com,Rodney,Lewis,Threat Analyst,Stale,Security Operations,Manager,2026-03-12 10:00:00,43,True,00QqemWKjkCzH7mtqh,False,False
+003mOYf0Yh6d5ASExA,001xG7YXipN2Ig00rV,amber.blair@turnerriggsandroman.com,Amber,Blair,Information Security Manager,Active,Security Management,C-Suite,2026-03-12 10:00:00,60,True,00QgXhdWnmyQ6fK4e9,False,False
+003bxSDWvJtqbLbYrY,001GNdzSgVaI5z52Dm,james.collins@white-estes.com,James,Collins,Senior SOC Analyst,Active,,,2026-03-12 10:00:00,60,True,00QjMMOE2DfxzNXp9H,False,False
+003XR4bR6IIl92EtEf,001QjBvKNAp0mxDoJJ,wanda.santos@gomez-jenkins.com,Wanda,Santos,,Nurture,Security Executive,Director,2026-03-12 10:00:00,40,True,00QgOqY4d9n0Xv00kK,False,True
+003PKuu8TBNEtRI3Mw,0015qOpx4kysRoORaD,samuel.holmes@meadowsplc.com,Samuel,Holmes,Software Engineer,Nurture,Non-Prospect,,2026-03-12 10:00:00,59,True,00QMXvlX1djRigGweR,False,False
+003uevtN7YPTuanQvW,001GoEd9Sf53GRx8ff,david.walker@rodriguez-johnson.com,David,Walker,,Active,Security Management,C-Suite,2026-03-12 10:00:00,62,True,00QslaRJ0VJltYLNgE,False,False
+003gv3je68u93RAOLA,0011Id9Z850kEnydx9,matthew.chapman@mcclurewardandlee.com,Matthew,Chapman,,Active,,C-Suite,2026-03-12 10:00:00,64,True,00Qkz2vxZWJVnBXcbq,False,False
+003gmN8DhWD3qNyxxl,001eoPni6JDWYlgAAC,jerry.robinson@dudleygroup.com,Jerry,Robinson,Director of Information Security,Active,Security Leadership,,2026-03-12 10:00:00,77,True,00QI5HOsfyIEdafZMD,False,False
+003Josy0cJGJ8j6B6k,001CtlRJoWcURYxPY8,chad.welch@jonesinc.com,Chad,Welch,,Active,Non-Prospect,,2026-03-12 10:00:00,51,True,00QIjRfPYzUodyG7Q6,False,False
+003MGAzjKV65IgrHvz,0018EE5GXTeLYHteOt,jeremy.whitehead@williams-cook.com,Jeremy,Whitehead,Threat Analyst,Active,Security Operations,VP,2026-03-12 10:00:00,63,True,00QA9MZp44eyyurC2W,False,False
+0031Q8osUVtTLfB4zE,001gcLRdTyon1dFrYT,michele.jones@bentleybyrdandorr.com,Michele,Jones,VP Security,Active,Security Executive,,2026-03-12 10:00:00,65,True,00QyMQyy2QdDqxuXt0,False,False
+003FNhbxKl1Kvk3UQr,0018EE5GXTeLYHteOt,john.caldwell@williams-cook.com,John,Caldwell,,Active,Security Operations,,2026-03-12 10:00:00,67,True,00QtFi02blZZpC4RqZ,False,False
+003s7NAxvpCPZygFP0,001DN8pbWvTMVTucHY,jason.anderson@harris-walters.com,Jason,Anderson,,Nurture,Security Operations,VP,2026-03-12 10:00:00,66,True,00Q1OQqzbWVa4OLapX,False,False
+003SO9qzycRJlTnHW4,001ioQaRY9AiexTgt2,selena.duncan@alvaradomillerandpatterson.com,Selena,Duncan,Senior SOC Analyst,Nurture,,,2026-03-12 10:00:00,74,True,00Q9N1qS3sjV3XXLOQ,False,False
+003uqs0D1K6e3F1xsd,001RBT7qYHDBTq0Zf2,thomas.mueller@harrellllc.com,Thomas,Mueller,Partner Alliance Manager,Active,Partner / Channel,,2026-03-12 10:00:00,62,True,00Q2lghqYVlQufwUtW,False,False
+003WWiAAADaHT63UGb,001HnKYaXRvj7uff0L,lindsey.lee@doyleltd.com,Lindsey,Lee,,Active,,Individual Contributor,2026-03-12 10:00:00,58,True,00Q39i1lfu9tdCmVJj,False,False
+003k4Ybn9nbFhSXxNV,001g2luCq1GNLLKv0M,collin.jordan@russell-daniels.com,Collin,Jordan,Information Security Manager,Active,Security Management,Director,2026-03-12 10:00:00,47,True,00QgFsec6CGGAQi9EU,False,False
+003z3FMrWELWZ8wzjH,001Wz5FYrsK9EjHvIH,rodney.owens@robinsonjonesandwelch.com,Rodney,Owens,,Active,Security Executive,,2026-03-12 10:00:00,64,True,00QZchBhpRmQaAgGMR,False,False
+003csXtTfVc0PkwBM2,00117rNy8H6h8l7qgA,jessica.nunez@morales-jones.com,Jessica,Nunez,VP Security,Active,Security Executive,VP,2026-03-12 10:00:00,55,True,00Q4ZPjfFSgpo9sCgk,False,False
+003QlxwbQZ8i5hzcqt,001gJSoFc1pDxj51I4,tracey.garcia@wellsinc.com,Tracey,Garcia,Cybersecurity Manager,Active,,,2026-03-12 10:00:00,80,True,00Q7qx0XOXhRd6jzKX,False,False
+003a5FDEkUturFIxYe,001ciuDCLFuMk9TsuZ,richard.morgan@gonzalezgroup.com,Richard,Morgan,,Active,Security Operations,C-Suite,2026-03-12 10:00:00,70,True,00Qn72GQMATDPNjZ3M,False,False
+003ZY0uVLSwCgOawNX,001HNdc06PVz0oRaFx,michelle.wright@hernandezinc.com,Michelle,Wright,Senior SOC Analyst,Active,Security Operations,,2026-03-12 10:00:00,75,True,00Q8UbzcIZX7N3IOCv,False,False
+003KVBO7iEGd50DF5k,001gatwqilBIzbvfLu,james.west@bryantgroup.com,James,West,Information Security Manager,Active,Security Management,VP,2026-03-12 10:00:00,73,True,00QiSSgLl5yCWSgz5Z,False,False
+003sR1S6NmMsvP8O7F,001YHyNZQeRT0dfACL,robert.ramirez@walker-jones.com,Robert,Ramirez,Senior SOC Analyst,Active,,Director,2026-03-12 10:00:00,71,True,00QL2Fx84Vq78CizRU,False,False
+0038QjdWmHwCMPInOy,001xQPHOvlHGTnabsP,john.leblanc@parkerortizandpowell.com,John,Leblanc,Senior SOC Analyst,Stale,Security Operations,VP,2026-03-12 10:00:00,58,True,00QK6SP3H2AagxddqW,False,False
+003TmSlB8e7Thcrqj0,001HnKYaXRvj7uff0L,scott.callahan@doyleltd.com,Scott,Callahan,Senior SOC Analyst,Active,,C-Suite,2026-03-12 10:00:00,77,True,00QzWQ7dUm11BnNRwK,False,False
+003Hzv2Pus6MDIUOhv,001vNMQSOZM4OtBJTf,andrea.williams@powellllc.com,Andrea,Williams,Security Analyst,Active,,C-Suite,2026-03-12 10:00:00,69,True,00Q5LVM0sWIeRG7GWj,False,False
+003k7HaePV1AgHR8WO,001YsP6ihgIqLSmNqE,yvette.huff@adamszunigaandwong.com,Yvette,Huff,Cybersecurity Manager,Active,Security Management,,2026-03-12 10:00:00,65,True,00Q46xHr4YxXBc3lF6,False,False
+003dUc0wFrQLr5xYbj,001uQO001xtSV2ceN5,tanya.house@washingtonryanandcummings.com,Tanya,House,Security Analyst,Disqualified,,,2026-03-12 10:00:00,68,True,00QcelpeY4zBztyhaS,False,False
+003fnTTn40ilMphPJd,001ltn3Wd9GV98gOqY,melinda.martin@short-garcia.com,Melinda,Martin,Security Director,Active,Security Leadership,C-Suite,2026-03-12 10:00:00,34,True,00QsNs271O7a2icJyH,False,False
+003JwtAapnTB0iT2Cw,001nipuaUkxRFZXe1c,todd.lewis@jonesinc.com,Todd,Lewis,Chief Security Officer,Disqualified,Security Executive,,2026-03-12 10:00:00,43,True,00QegSEuhOgM3tBMsK,False,False
+003IH9DWwnVTsCFyFP,001RtsYh0OPk9pkjI7,richard.brown@millerhernandezandreyes.com,Richard,Brown,Security Analyst,Stale,Security Operations,VP,2026-03-12 10:00:00,66,True,00Q01iHq2eebFbKzK4,True,False
+00342cOg8NqTJJxxK3,00140fAraVNqTIAae2,nicholas.galloway@reidfergusonandsanchez.com,Nicholas,Galloway,,Active,,Director,2026-03-12 10:00:00,76,True,00QJJ2jT6cVoqoPGXy,False,False
+003OzuhPDKOzphKiF3,001Lh8WvAwFv0Yg7NZ,joseph.bowers@bakermasonandwhite.com,Joseph,Bowers,,Active,,Individual Contributor,2026-03-12 10:00:00,50,True,00QzYvX3a2BoFrjjLY,False,False
+003VMFkQ5KexibG4QZ,001QyU7AaqFGJJByVK,spencer.henderson@hillinc.com,Spencer,Henderson,,Active,,C-Suite,2026-03-12 10:00:00,67,True,00Qz8N2TY6nLDDnziK,False,False
+0036DVvX4ZJApV4fLH,001zi6sEg3iCPU6zUj,susan.cowan@morton-chase.com,Susan,Cowan,,Active,,Director,2026-03-12 10:00:00,66,True,00Q2GUfO3Ha6QAA2RA,False,False
+003mIIlID9JWyi1hoW,001AUuRqphlhHVlnES,angela.higgins@georgegroup.com,Angela,Higgins,,Stale,Security Management,VP,2026-03-12 10:00:00,57,True,00QGGxmXzgAKqHJL9y,False,False
+0039MGSL6YNBmOXrcL,001gcLRdTyon1dFrYT,eric.phillips@bentleybyrdandorr.com,Eric,Phillips,CISO,Active,,Director,2026-03-12 10:00:00,62,True,00QIRRj7afj5Adnecx,False,False
+003vYo7CzakFIFvhFp,001DpLm4IWxHwqFEg8,tanya.riley@jacksonmillerandrobertson.com,Tanya,Riley,VP Security,Nurture,,Manager,2026-03-12 10:00:00,86,True,00QO8fryPzmaR4ITIK,False,False
+003GaZpfPYe5Dv3q6Q,001f7ZJ69PqcUDO4lK,amy.adkins@hickmanltd.com,Amy,Adkins,Threat Analyst,Stale,Security Operations,Director,2026-03-12 10:00:00,83,True,00QVU7CCKbheN9Pot7,True,False
+003t32JrlVFyUhGA6c,001Z2cuVixkZVYkBzP,brian.silva@suarezllc.com,Brian,Silva,Chief Security Officer,Active,,Director,2026-03-12 10:00:00,75,True,00QqoZZwWhe7Ea170x,False,False
+003AzUwyBJ8QYSXI1m,001Ybd3Bh4ZucCkJYy,wesley.farrell@burkemartinezandriggs.com,Wesley,Farrell,CISO,Active,Security Executive,,2026-03-12 10:00:00,68,True,00QhGtaPxgw1lqq7vl,False,False
+003UqwIYvzvQLJOH8r,001Ze11MFCIX3BYOtD,eric.yu@edwardsbakerandanderson.com,Eric,Yu,Security Director,Active,,Director,2026-03-12 10:00:00,67,True,00Qi3NHtEp1cgknp0f,False,False
+003SLy3W6UGBk0hopU,001im2GNXX9WwHE4Fy,christopher.lopez@woodhunterandpeterson.com,Christopher,Lopez,,Active,Security Management,VP,2026-03-12 10:00:00,65,True,00QeMC71N5ALz4evtO,False,False
+003Gkcw41C15Ii6HKC,001im2GNXX9WwHE4Fy,brooke.leonard@woodhunterandpeterson.com,Brooke,Leonard,Security Consultant,Stale,Partner / Channel,,2026-03-12 10:00:00,57,True,00Q6DdVG9gMf5yoTBh,False,False
+003EUsVXLXHl2BpSOZ,001uQO001xtSV2ceN5,joe.wilson@washingtonryanandcummings.com,Joe,Wilson,,Active,,Director,2026-03-12 10:00:00,74,True,00QH4DoftzjaGVirHQ,False,False
+003tj8b8rhBafanAWE,001DN8pbWvTMVTucHY,pamela.sanchez@harris-walters.com,Pamela,Sanchez,Director of Information Security,Active,Security Leadership,Manager,2026-03-12 10:00:00,66,True,00QXMRqOGqleigCCRE,False,False
+003UjqyHl3pxa8Sx8p,001VHWGaub52Ztd26f,brooke.harvey@garcia-james.com,Brooke,Harvey,Chief Information Security Officer,Active,Security Executive,,,43,False,,False,False
+003tuNc6GpNm31nhNu,0018GrgmolaHr8IRh1,robert.silva@rodriguezllc.com,Robert,Silva,,Stale,,Manager,,53,False,,False,False
+003cWDKxfjfM59MdNR,001kfFNuYUPnmbpD0e,alexandra.donovan@hoffmanbakerandrichards.com,Alexandra,Donovan,Information Security Manager,Active,,,,48,False,,False,False
+0033TbxSpcRIHEJHuD,001QYXzENpOSWe9DyF,james.moran@green-wright.com,James,Moran,,Active,Security Operations,VP,2026-04-20 11:30:00,68,False,,False,False
+003waNxlb1WoSOHyGE,001MPMDEaIaGr8bYPX,john.foster@riggsplc.com,John,Foster,Director of Information Security,Nurture,Security Leadership,Manager,,48,False,,False,False
+003eZi2mEgJZOGRpwL,,emily.evans@orphan-enterprise.com,Emily,Evans,Security Analyst,Stale,,,,56,False,,True,False
+003DNwU3YXdMGTZenG,001ePut0SstzyshA6P,leslie.walton@wilkerson-day.com,Leslie,Walton,,Disqualified,Security Operations,C-Suite,,66,False,,False,False
+003MlUzgNwCP2klyuj,001QYXzENpOSWe9DyF,charles.ellis@green-wright.com,Charles,Ellis,VP Security,Stale,Security Executive,,,38,False,,False,False
+0030zNZuoHxIUwC7ac,001BovCzfAPxj5eZff,yolanda.ferrell@henderson-bernard.com,Yolanda,Ferrell,,Stale,,Individual Contributor,,38,False,,True,False
+0039ntV6Y4FJJfCjq3,001h7i71S87XwXaHCP,charles.lewis@westhendersonandramirez.com,Charles,Lewis,Senior SOC Analyst,Active,,,2026-04-20 11:30:00,46,False,,False,False
+003SXkZQJ4KsTJedVv,0012ODH0A2TVwyJmIe,joseph.mahoney@shieldscochranandadams.com,Joseph,Mahoney,,Active,,,,48,False,,False,True
+003aWxscHjFndTyBKF,001uQO001xtSV2ceN5,nicole.suarez@washingtonryanandcummings.com,Nicole,Suarez,,Active,Security Management,,2026-04-20 11:30:00,42,False,,False,False
+003HqyARVDmyJI9Gpq,001JtVEFEtb6F7nvdE,mike.moore@patton-jenkins.com,Mike,Moore,Security Director,Active,Security Leadership,,2026-04-20 11:30:00,32,False,,False,False
+003tKbs9M9BjcYmxU0,001zNmREpOaUVgAk7G,martha.warner@rossrobinsonandbright.com,Martha,Warner,Information Security Manager,Active,Security Operations,,,46,False,,False,False
+003aRgBbmHmGqDTiRb,001xsyf348JkxisEdA,cheryl.archer@schmidthansenandstewart.com,Cheryl,Archer,,Active,Security Management,,2026-04-20 11:30:00,32,False,,False,False
+003MdOayq0O1b1Oox8,001ePut0SstzyshA6P,destiny.smith@wilkerson-day.com,Destiny,Smith,Threat Analyst,Active,Security Operations,Director,,22,False,,False,False
+003C5bpGuyjvvMo8FY,001YRsMfihslQFzixl,lisa.evans@brown-wall.com,Lisa,Evans,SecOps Manager,Active,Security Management,,,44,False,,False,False
+003rj3Ofx7LMooj84u,001D04wzInjq5Jzjux,elizabeth.mcmillan@harveydavisandcrane.com,Elizabeth,Mcmillan,Security Analyst,Active,Security Operations,Director,,40,False,,False,False
+003Q34A4VOJjeHSl0j,001NgAC72qFl41sNLj,dennis.wilson@hendersonramirezandlewis.com,Dennis,Wilson,,Active,Security Management,,,60,False,,False,False
+003NTjlib9MLLKobeW,001nuVxUZpfbH9vOWO,daniel.tran@dyerpotterandmack.com,Daniel,Tran,Threat Analyst,Active,,Director,,45,False,,False,False
+003ilbVaqzU9Ue591E,001Ze11MFCIX3BYOtD,joseph.jacobs@edwardsbakerandanderson.com,Joseph,Jacobs,CISO,Stale,Security Management,,,34,False,,False,False
+003ZSy6JHNRcgC22pH,001UpCXiaZ8iZxNNKq,jennifer.harris@garciallc.com,Jennifer,Harris,Chief Security Officer,Active,Security Executive,Director,,70,False,,False,False
+003ysZCAMdGiZCShW6,001tTThRRk7GWSkhWq,cynthia.baker@williamsjohnsonandwright.com,Cynthia,Baker,Threat Analyst,Active,Security Operations,VP,,15,False,,False,False
+003SmCpQ4XShhBwGxX,001xQPHOvlHGTnabsP,tracy.whitehead@parkerortizandpowell.com,Tracy,Whitehead,Security Analyst,Stale,Security Operations,,,50,False,,False,False
+0034JOj1lSAtVBMhim,001g2luCq1GNLLKv0M,meghan.davis@russell-daniels.com,Meghan,Davis,SOC Analyst,Active,Security Operations,VP,,39,False,,False,True
+0032oKDzeLpHMIZdjO,001EeVVhDIq2AnHTmt,rodney.hill@abbott-munoz.com,Rodney,Hill,Chief Information Security Officer,Nurture,Security Executive,,,42,False,,False,False
+003dzlPLQKWkCJ5fsw,0019HpUlwW1uhw3U3x,adam.wise@davisgroup.com,Adam,Wise,,Active,Security Operations,VP,,47,False,,False,False
+0031uznmdJ8GfSLWRA,001YYojmLVOkVEUVB5,dana.green@sandoval-cunningham.com,Dana,Green,Cybersecurity Manager,Active,Security Management,C-Suite,,35,False,,False,False
+003GNElLR8abMh0X9z,001zuLWOefQrSO42uK,joyce.arnold@smithplc.com,Joyce,Arnold,,Stale,Security Operations,Director,,42,False,,False,False
+003WtFuaQvSMbkuuP4,001EeVVhDIq2AnHTmt,ronald.smith@abbott-munoz.com,Ronald,Smith,Director of Information Security,Active,Security Leadership,,2026-04-20 11:30:00,46,False,,False,False
+003CY5dGJQIbJu4Xej,001NgAC72qFl41sNLj,charles.ware@hendersonramirezandlewis.com,Charles,Ware,SecOps Manager,Active,Security Management,VP,,53,False,,False,False
+003K1URtbzEoC6nsgW,001qpepgaxT82ExHgD,rebecca.gardner@christensenplc.com,Rebecca,Gardner,,Active,Security Operations,Director,,48,False,,False,False
+003l5TGWi2Y6PiSCSG,001HnKYaXRvj7uff0L,mary.aguilar@doyleltd.com,Mary,Aguilar,Partner Alliance Manager,Active,Partner / Channel,VP,,41,False,,False,False
+003cGOtJt3tlrtBhjq,001ogrNwwmq6OLkTkx,earl.anderson@davisandsons.com,Earl,Anderson,,Active,Non-Prospect,C-Suite,,24,False,,False,False
+003iRrpeMvBiDPgdAl,001pxYyhIKHQI7CRBs,kyle.nolan@manninggroup.com,Kyle,Nolan,,Active,,,,53,False,,False,False
+003PH8UCiY5DCQSCon,001RtsYh0OPk9pkjI7,laura.valencia@millerhernandezandreyes.com,Laura,Valencia,Director of Information Security,Active,,,,44,False,,False,False
+0032CbDvCkVLhgYXuO,001EBqUhArQEPcyLas,rachel.clark@yuinc.com,Rachel,Clark,,Nurture,Security Executive,C-Suite,,44,False,,False,False
+003DemRA8JvRkPTSZh,001pxYyhIKHQI7CRBs,john.garcia@manninggroup.com,John,Garcia,,Active,,C-Suite,,39,False,,False,False
+003gYVxEOfY34NajjG,001LAQvc1v9r86eNwX,kimberly.henson@walshllc.com,Kimberly,Henson,SecOps Manager,Active,Security Management,Director,2026-04-20 11:30:00,58,False,,False,False
+0034s6A8vfa9zhswId,001gJSoFc1pDxj51I4,richard.oliver@wellsinc.com,Richard,Oliver,,Nurture,Security Management,Director,2026-04-20 11:30:00,37,False,,False,False
+003KMSzAnkiI0wzr2h,001YTH8xIZM1JRcore,eric.spears@mcclainmillerandhenderson.com,Eric,Spears,,Stale,,,,31,False,,False,False
+0038iiX13R5MCAYxnA,001HnKYaXRvj7uff0L,michelle.cherry@doyleltd.com,Michelle,Cherry,,Active,,Individual Contributor,,52,False,,False,False
+003ccDwJ7eTG1UrGGL,001sUkiH8G4ZpZDYUv,lisa.keith@wrightandsons.com,Lisa,Keith,SOC Analyst,Stale,Security Operations,VP,,21,False,,True,False
+003M4HaC4Juv8skRLs,001fGcn13Dce53Ic5t,angel.doyle@hernandezltd.com,Angel,Doyle,,Active,Security Management,,,31,False,,False,False
+003YMrfF0rir1agkKj,001HRsYwP8KXSQbD7W,martin.galvan@torres-pope.com,Martin,Galvan,Director of Cybersecurity,Nurture,Security Leadership,,,31,False,,False,False
+0031vfi5jE9VoBNnTv,001s9BvYB9WoYKvSNk,leah.shields@castaneda-ashley.com,Leah,Shields,Director of Cybersecurity,Active,Security Leadership,Manager,2026-04-20 11:30:00,60,False,,False,False
+00365oQyqGArXxtG7g,001L2lVSID1u7a67h9,lisa.adams@lewiskennedyandsantana.com,Lisa,Adams,SecOps Manager,Active,Security Management,Director,,47,False,,False,False
+003XpKCPoPVGQ9taae,0012WNl7A4dhjkuRv6,kristin.rodriguez@nolanandsons.com,Kristin,Rodriguez,Information Security Manager,Stale,Security Management,,,47,False,,False,False
+003pcMdK3nLh7fLxVO,001tUJrhQR6FEecAtp,monica.garrison@martinroseandobrien.com,Monica,Garrison,,Active,,C-Suite,2026-04-20 11:30:00,63,False,,False,False
+003C9VQPVpWrdy9qYl,0019enq522wjZRL9Oa,jeffrey.velasquez@flowersmartinandkelly.com,Jeffrey,Velasquez,,Nurture,Security Executive,Director,,62,False,,False,False
+003VnN4SgeJpB3jN5P,001mn1uj3a1iipkOba,steven.torres@russellgroup.com,Steven,Torres,Product Manager,Stale,Non-Prospect,Manager,,21,False,,True,False
+0036EB0WWHa7YDJ5wQ,001r4Eh0C3BfQ0tveH,laura.perez@mckeegardneranddavenport.com,Laura,Perez,Cybersecurity Manager,Active,,Manager,2026-04-20 11:30:00,73,False,,False,False
+003CVOkcxlR3NwfNTi,,andrew.lee@orphan-enterprise.com,Andrew,Lee,Security Director,Active,,,,26,False,,False,False
+003E7Y7bvuSznOG61H,001Ybd3Bh4ZucCkJYy,mark.lin@burkemartinezandriggs.com,Mark,Lin,,Stale,Security Operations,,,36,False,,True,False
+003D4cRikdtXCkKYgE,001RtsYh0OPk9pkjI7,tammy.ramirez@millerhernandezandreyes.com,Tammy,Ramirez,Security Analyst,Nurture,,,,51,False,,False,False
+003u8JiZXVKuhizRIB,001gatwqilBIzbvfLu,darlene.ross@bryantgroup.com,Darlene,Ross,SOC Analyst,Active,Security Operations,Director,,64,False,,False,False
+0032fa5RKrQXDhiqBo,001Is9hVLXnGBB19sM,tina.herrera@arroyomillerandtucker.com,Tina,Herrera,Information Security Manager,Active,Security Management,Individual Contributor,,50,False,,False,False
+003ZszIl98M19FCMmd,001zNmREpOaUVgAk7G,sheila.wilson@rossrobinsonandbright.com,Sheila,Wilson,,Nurture,,VP,,19,False,,False,False
+003wmpM3CgdHjbFeoB,001gatwqilBIzbvfLu,tara.white@bryantgroup.com,Tara,White,Director of Cybersecurity,Active,Security Leadership,C-Suite,,45,False,,False,False
+003oozm3eKdBnLlxCm,001q4jB6nBvbdFo9xb,sydney.baker@smithmontoyaandevans.com,Sydney,Baker,,Active,Security Management,VP,,52,False,,False,False
+003gCzVnsjX74JIozG,001EcFK12BGCSzOjD8,daniel.hamilton@jones-young.com,Daniel,Hamilton,Threat Analyst,Nurture,,C-Suite,,48,False,,False,False
+003uJ3KjJa8cDVcGDX,001ePut0SstzyshA6P,jessica.edwards@wilkerson-day.com,Jessica,Edwards,Security Analyst,Active,,Manager,2026-04-20 11:30:00,44,False,,False,True
+003nwo9aPkCJK8CiRl,001piAMozPf8eGF9Iy,catherine.dixon@campbell-clark.com,Catherine,Dixon,,Active,,C-Suite,,46,False,,False,False
+003wMwkIeRm8ohD6J7,001Wz5FYrsK9EjHvIH,paul.ray@robinsonjonesandwelch.com,Paul,Ray,Security Analyst,Active,Security Operations,Individual Contributor,,20,False,,False,False
+003dxCFZDGZ3CwPQ82,001f7ZJ69PqcUDO4lK,jonathan.fletcher@hickmanltd.com,Jonathan,Fletcher,Chief Security Officer,Active,Security Executive,,2026-04-20 11:30:00,60,False,,False,False
+003ekgjjm7bzQ5DATb,001f7ZJ69PqcUDO4lK,aaron.frost@hickmanltd.com,Aaron,Frost,CISO,Active,Security Executive,VP,,46,False,,False,False
+003OWEPGICJ3tWoxr0,001Lh8WvAwFv0Yg7NZ,amanda.ball@bakermasonandwhite.com,Amanda,Ball,Chief Security Officer,Nurture,Security Executive,Manager,,60,False,,False,False
+003lkR4Xjh9JBwmRP8,001Lh8WvAwFv0Yg7NZ,judy.lambert@bakermasonandwhite.com,Judy,Lambert,Security Director,Nurture,Security Leadership,VP,,26,False,,False,False
+0035V65j8HFOs38U9P,001fGcn13Dce53Ic5t,michael.jones@hernandezltd.com,Michael,Jones,,Active,Non-Prospect,C-Suite,,18,False,,False,False
+003QhbMnwuLmGWVmf0,0011fgUKx7tirfILLW,elizabeth.rivera@lewis-murphy.com,Elizabeth,Rivera,Director of Cybersecurity,Active,Security Leadership,,,58,False,,False,False
+003FdPySAxavtBIn3T,00130pNIhsHFk6jOSL,lee.charles@wrightgarciaanddeleon.com,Lee,Charles,,Stale,,,,73,False,,False,False
+003TzZLis9Gu5KxaNq,001Is9hVLXnGBB19sM,jennifer.evans@arroyomillerandtucker.com,Jennifer,Evans,Cybersecurity Manager,Stale,,Director,,27,False,,True,False
+003ZrEZsKETnXjsNNh,0015qOpx4kysRoORaD,kyle.ortiz@meadowsplc.com,Kyle,Ortiz,SecOps Manager,Active,,VP,2026-04-20 11:30:00,38,False,,False,False
+003VE8LwDBpQ8YxTbq,001gatwqilBIzbvfLu,richard.phillips@bryantgroup.com,Richard,Phillips,Solutions Engineer,Active,Partner / Channel,,,22,False,,False,False
+003wN7dsNemMVLkut0,001EBqUhArQEPcyLas,david.fisher@yuinc.com,David,Fisher,Cybersecurity Manager,Disqualified,Security Management,C-Suite,,21,False,,False,False
+003ZaGxEv4gjnl3MZG,001L2lVSID1u7a67h9,shelby.byrd@lewiskennedyandsantana.com,Shelby,Byrd,,Active,Security Leadership,Manager,,55,False,,False,False
+003Y5DtwY3LVvSbYn1,001Y7gbtP7ySeQMgV0,raven.gilbert@smith-bowen.com,Raven,Gilbert,,Active,Security Operations,,2026-04-20 11:30:00,34,False,,False,True
+003WeWUcgXFdhpePUW,0015QHXw3HNfVOwOc8,kevin.kelley@ramirezstricklandandwashington.com,Kevin,Kelley,,Stale,Partner / Channel,,,43,False,,False,False
+003066vjFToJgJanlr,0014d9n0Xv00kKXR4b,aaron.mitchell@reid-poole.com,Aaron,Mitchell,SOC Analyst,Nurture,,VP,,56,False,,False,False
+003RlPgZ8AFzVtCGEw,001TYIKIuhvPU1S8Lv,russell.carpenter@stanleytuckerandlee.com,Russell,Carpenter,,Disqualified,Non-Prospect,Manager,,54,False,,False,False
+003CTQ0oz9A13X6waP,001iVUi9iGaOBSMjzQ,diana.marshall@white-green.com,Diana,Marshall,Chief Security Officer,Active,Security Executive,Individual Contributor,,73,False,,False,False
+003R8T3kwmm0zoAEVV,001uY18it6mt78sREJ,scott.lewis@simmonsmeadowsandgriffin.com,Scott,Lewis,Threat Analyst,Active,,,,50,False,,False,False
+003FjChEo6bTZEblLu,001EBqUhArQEPcyLas,thomas.santana@yuinc.com,Thomas,Santana,Security Research Engineer,Nurture,Non-Prospect,C-Suite,,62,False,,False,False
+003CsEFHYHbV92hB0B,001EeVVhDIq2AnHTmt,laura.jackson@abbott-munoz.com,Laura,Jackson,VP Security,Disqualified,Security Executive,Director,,57,False,,False,False
+003tyVJEIHDIjdqKxP,0016ygsij6X7Ok8R5W,christopher.robertson@marshall-petersen.com,Christopher,Robertson,Senior SOC Analyst,Active,Security Operations,C-Suite,2026-04-20 11:30:00,11,False,,False,False
+003YKVMxA9zdpotfQ1,001dp0CXP9K63LSFZH,cynthia.rogers@snydercamposandcallahan.com,Cynthia,Rogers,,Active,,C-Suite,,29,False,,False,False
+003FAbDbtJtgEQmEYP,0018GrgmolaHr8IRh1,loretta.potter@rodriguezllc.com,Loretta,Potter,,Active,,,,29,False,,False,False
+003e0nqsJXM7SJKqJG,001iwItCqpgrxMp1ju,emily.walker@johnson-doyle.com,Emily,Walker,,Active,,Director,,52,False,,False,False
+003HmyMCVlbR1Jn7UC,001VIhhWZwZcSH9gZU,james.johnson@smith-bell.com,James,Johnson,Cybersecurity Manager,Active,,,,34,False,,False,False
+003dmCoUV0z14N0qrj,001G895i1JwQV7Vbeq,john.alvarez@king-miller.com,John,Alvarez,,Active,Security Leadership,,,39,False,,False,False
+003tE9A4mqbWrINcSW,001qWCA79ISjs8JHUd,melissa.jones@williamsandsons.com,Melissa,Jones,,Stale,Security Management,C-Suite,,39,False,,True,True
+00373P2y00oJFhPJWG,001ReIdHFJjuGhmKfF,robert.soto@diazinc.com,Robert,Soto,Information Security Manager,Nurture,Security Management,,,72,False,,False,False
+003TXU6ngnrz1dHRhH,0017tO4fJHS64k2k59,james.horton@johnson-carlson.com,James,Horton,Senior SOC Analyst,Active,Security Operations,,,26,False,,False,False
+003Yb7L0P6QWoIt7wY,001ioRRdzHzmA4KR1V,troy.sanchez@carlson-cruz.com,Troy,Sanchez,Partner Alliance Manager,Nurture,Security Management,C-Suite,,53,False,,False,False
+0038pfZon34N2Vzc1Z,001OQdhtzF3Rth4sMn,diana.smith@smith-frost.com,Diana,Smith,,Active,Security Operations,,,44,False,,False,False
+003gjqeATHuRVNlBNa,0015BRh8LojIIf94Ch,karen.carrillo@walkerllc.com,Karen,Carrillo,VP Security,Stale,Security Executive,Director,,19,False,,False,False
+003SVOiKz6B2ikKurf,001piAMozPf8eGF9Iy,daniel.coleman@campbell-clark.com,Daniel,Coleman,SecOps Manager,Disqualified,,Manager,,29,False,,False,False
+00365OM48mRkyAqfw6,,gregory.rubio@orphan-enterprise.com,Gregory,Rubio,Threat Analyst,Active,,Individual Contributor,,57,False,,False,False
+003nm6YqUxAmnZTllX,001NgAC72qFl41sNLj,april.williams@hendersonramirezandlewis.com,April,Williams,Director of Information Security,Active,Security Leadership,Individual Contributor,,77,False,,False,False
+003OfD28ynxALeId5D,001xG7YXipN2Ig00rV,john.charles@turnerriggsandroman.com,John,Charles,Security Director,Active,,Individual Contributor,,42,False,,False,False
+003pMsyw8IJqF52itG,001Y7gbtP7ySeQMgV0,stephen.solis@smith-bowen.com,Stephen,Solis,,Active,Security Executive,,2026-04-20 11:30:00,54,False,,False,False
+003U5r2MVqt3t9Vj0O,001FVr9Qh8yXv6UmFF,elizabeth.travis@rodriguezbrennanandgarrison.com,Elizabeth,Travis,,Stale,Non-Prospect,VP,,61,False,,False,False
+003kCh3EB9ICgSjvmr,001E2JDBld6DYyeNdj,caitlin.dodson@allen-allen.com,Caitlin,Dodson,SecOps Manager,Disqualified,Security Leadership,VP,,48,False,,False,False
+0039aVl5pEfur8hx5g,001INM1MjeBsrdFtCd,patricia.salazar@donovan-harris.com,Patricia,Salazar,SOC Analyst,Stale,,Individual Contributor,,32,False,,False,False
+003MqOucMC694Xi1Xr,001qWCA79ISjs8JHUd,jennifer.wagner@williamsandsons.com,Jennifer,Wagner,,Disqualified,Security Operations,Manager,,65,False,,False,False
+003VybmyyO7jsXT54L,001q4jB6nBvbdFo9xb,maria.kelley@smithmontoyaandevans.com,Maria,Kelley,Senior SOC Analyst,Active,,Individual Contributor,,23,False,,False,False
+003IAUYMAAcvCnQjEN,001E86PWtzjxUD0sRX,phyllis.manning@mitchell-jordan.com,Phyllis,Manning,SecOps Manager,Active,Security Management,C-Suite,,51,False,,False,False
+003h30GscecgAfOJpp,0014HZKjht3X13npgW,thomas.green@gray-mayo.com,Thomas,Green,Information Security Manager,Active,Security Management,Director,2026-04-20 11:30:00,51,False,,False,False
+003yf2sKCPMq72llUL,001iVUi9iGaOBSMjzQ,john.walsh@white-green.com,John,Walsh,Software Engineer,Active,Non-Prospect,,2026-04-20 11:30:00,63,False,,False,False
+003CzOUTsYMQ7PXfil,0019NIQ0Wobtqn62tO,katie.boyd@guzmanhoffmanandbaldwin.com,Katie,Boyd,Director of Cybersecurity,Stale,Security Leadership,,,42,False,,False,False
+003OBMWlsCDbkjR7D1,001xsyf348JkxisEdA,courtney.hill@schmidthansenandstewart.com,Courtney,Hill,Senior SOC Analyst,Active,Security Operations,Manager,,40,False,,False,False
+003NS80TKIsEEKLQYE,001Cr0uIamIsMCKEVm,chris.mitchell@jackson-lawson.com,Chris,Mitchell,,Active,Security Executive,,,43,False,,False,False
+003zDE6vRbrlvon4vL,0013Vpazov026aO0Tg,joseph.flores@higginsstricklandandmartin.com,Joseph,Flores,Security Analyst,Stale,,VP,,27,False,,True,False
+003z6OwD8kmQfDkjEX,001ijULzIDHPnpU2fB,amber.taylor@mcdanielbentleyandmclaughlin.com,Amber,Taylor,Director of Cybersecurity,Active,Security Leadership,Director,,43,False,,False,False
+003Pk1FYuhoIE9WVVI,001RBT7qYHDBTq0Zf2,jesse.benson@harrellllc.com,Jesse,Benson,SOC Analyst,Active,Security Operations,VP,,41,False,,False,False
+0030ggLW6ZcgN14jsB,00195e5bzVV8OA9x14,jasmine.brown@cortezllc.com,Jasmine,Brown,SOC Analyst,Active,,Individual Contributor,2026-04-20 11:30:00,62,False,,False,False
+003m8VaZDrkqSzNpUG,001JXke1Mo4iCppaX3,rick.daniels@lee-davis.com,Rick,Daniels,Director of Information Security,Nurture,Security Leadership,,,27,False,,False,False
+003XwbjaX6ft8kdVON,001w6AQOfMXSfjSNTt,robert.clark@holmeswilliamsandwright.com,Robert,Clark,Security Director,Active,Security Management,,,31,False,,False,False
+003z2R2StvZ3LjzN3M,001ozlNAbMmKyRmUYd,robert.stein@mccarthyinc.com,Robert,Stein,Software Engineer,Active,,,,51,False,,False,False
+0032fHyS2GHnFtvNb3,001D04wzInjq5Jzjux,brandy.dominguez@harveydavisandcrane.com,Brandy,Dominguez,Security Analyst,Stale,Security Operations,VP,,62,False,,True,False
+003FT0qFhU6BJavoUK,001Cr0uIamIsMCKEVm,melissa.cannon@jackson-lawson.com,Melissa,Cannon,Security Consultant,Active,Partner / Channel,Manager,,51,False,,False,False
+003PYJixTgGlWCjAzf,001DXQsedBEmLtST18,omar.smith@hancockandsons.com,Omar,Smith,,Active,,VP,,39,False,,False,False
+003IW2KN9Q6TzkFEC8,001HGZpvr6SgYzV2am,michael.molina@spencer-lee.com,Michael,Molina,Chief Information Security Officer,Stale,Security Executive,C-Suite,,62,False,,False,False
+003jI5h0gwrGhsxsbi,001AEeppMKmgs6uMXu,melissa.ashley@salazar-ball.com,Melissa,Ashley,,Nurture,,Individual Contributor,,56,False,,False,False
+003hv1zJJ3WDSLVFCB,001HRsYwP8KXSQbD7W,robert.adkins@torres-pope.com,Robert,Adkins,,Stale,,,,62,False,,False,False
+003y3vcPBrfkbNVtNN,0012zMj518Y2bTu5X1,amy.morrison@wattsrobinsonandnguyen.com,Amy,Morrison,SOC Analyst,Active,,C-Suite,,39,False,,False,False
+003bOG7rmZ0JfHtKE5,001GOAwwln6Eoie0gV,jeffrey.robinson@anderson-bailey.com,Jeffrey,Robinson,,Stale,Security Management,,,46,False,,True,False
+003f8HrlVj7Qd7lSsg,001Y7gbtP7ySeQMgV0,ryan.johnson@smith-bowen.com,Ryan,Johnson,,Disqualified,,,,55,False,,False,False
+003doLoFF6qtIebN4b,001MPMDEaIaGr8bYPX,matthew.shelton@riggsplc.com,Matthew,Shelton,Chief Information Security Officer,Active,Security Management,Manager,,17,False,,False,False
+003zfNm8x9WHA4CaCZ,001JnOng0wVJY08YMN,richard.martin@novakplc.com,Richard,Martin,,Stale,,Manager,,44,False,,False,False
+003L0xvNKFcTIsyhiI,001rNHu9GCLgR0OVSn,tanner.anderson@house-glover.com,Tanner,Anderson,Director of Cybersecurity,Stale,,Director,,16,False,,True,False
+003QvqUCp8vCLaQOaD,001YTH8xIZM1JRcore,cindy.johnson@mcclainmillerandhenderson.com,Cindy,Johnson,Director of Information Security,Active,Security Leadership,Manager,,69,False,,False,False
+003f2OH3YBh8xLx0Y8,001ioRRdzHzmA4KR1V,phillip.elliott@carlson-cruz.com,Phillip,Elliott,,Active,Security Management,Director,,25,False,,False,False
+0035wfMsSoEwr4RmmY,001VJGyOphTExIqqB9,anthony.day@pattersonsmithandjones.com,Anthony,Day,Senior SOC Analyst,Stale,Security Operations,Manager,,46,False,,False,False
+003OJQJeheqJoGWlQ9,001YHyNZQeRT0dfACL,derek.murray@walker-jones.com,Derek,Murray,Senior SOC Analyst,Nurture,Security Operations,Manager,,59,False,,False,False
+003PO0u0zhGEGcSc4H,,brent.gray@orphan-enterprise.com,Brent,Gray,CISO,Active,,,,47,False,,False,False
+003nQ74mudMbAbX50p,0017tO4fJHS64k2k59,jason.murphy@johnson-carlson.com,Jason,Murphy,VP Security,Active,Security Executive,C-Suite,,40,False,,False,False
+003eLBfBh84x3QWdXd,001Fvbgz7h6itCmDDB,kathleen.gray@mitchellnelsonandflores.com,Kathleen,Gray,,Stale,Security Leadership,Individual Contributor,,63,False,,False,False
+0030yMz1WMCCAMgOPb,001gcLRdTyon1dFrYT,karen.decker@bentleybyrdandorr.com,Karen,Decker,,Active,,Individual Contributor,2026-04-20 11:30:00,64,False,,False,False
+00304hFwDMlichKFOw,001xsyf348JkxisEdA,johnny.miller@schmidthansenandstewart.com,Johnny,Miller,,Nurture,Security Operations,Director,2026-04-20 11:30:00,60,False,,False,False
+003aKQdFZ1Amm4WvPR,001rSvBpDmH5RiMKpP,andrew.ryan@riverajohnsonandwiley.com,Andrew,Ryan,Senior SOC Analyst,Active,Security Operations,VP,,29,False,,False,False
+003ug24E5NQCnDVYYx,001r4Eh0C3BfQ0tveH,zoe.bell@mckeegardneranddavenport.com,Zoe,Bell,,Active,Security Management,Individual Contributor,,50,False,,False,False
+003smKVcbmk2SvIlb0,,debra.harrington@orphan-enterprise.com,Debra,Harrington,Cybersecurity Manager,Active,,Individual Contributor,2026-04-20 11:30:00,21,False,,False,False
+003nCwxkGXMASh2ilH,001YHyNZQeRT0dfACL,denise.webster@walker-jones.com,Denise,Webster,Security Director,Disqualified,,,,42,False,,False,False
+003VK0sjpNrhFKETWX,001RtsYh0OPk9pkjI7,stefanie.gonzalez@millerhernandezandreyes.com,Stefanie,Gonzalez,Threat Analyst,Nurture,Security Operations,,,48,False,,False,False
+003CtxRSEqy5Kcnm1y,001nipuaUkxRFZXe1c,andrew.hernandez@jonesinc.com,Andrew,Hernandez,Threat Analyst,Active,Security Operations,Individual Contributor,,63,False,,False,False
+003ifBvKCMACzXtxlo,001immdvrHuRrq19Qf,david.caldwell@medina-navarro.com,David,Caldwell,Information Security Manager,Active,Security Management,Manager,,42,False,,False,False
+003rohwHuPpUV0lLi1,0013Vpazov026aO0Tg,anne.robinson@higginsstricklandandmartin.com,Anne,Robinson,,Active,,,2026-04-20 11:30:00,52,False,,False,False
+003zzJODFVjyoUDFWU,001GoEd9Sf53GRx8ff,holly.wang@rodriguez-johnson.com,Holly,Wang,,Active,Security Operations,,,51,False,,False,False
+003RmBIxJh6aYZvzQz,001qpepgaxT82ExHgD,gary.lawson@christensenplc.com,Gary,Lawson,,Nurture,,,,24,False,,False,False
+003j7uNLL18myHlgJB,001EBqUhArQEPcyLas,julie.wilson@yuinc.com,Julie,Wilson,,Active,,,,25,False,,False,False
+003bm4xmsGCwau4y9i,0010IZbcNJOVzNEMr7,lori.oconnell@dickson-brady.com,Lori,Oconnell,Director of Cybersecurity,Disqualified,,Manager,,44,False,,False,False
+0031tYPjJtmSCm9BZL,001h7i71S87XwXaHCP,daniel.johnson@westhendersonandramirez.com,Daniel,Johnson,Threat Analyst,Active,,Manager,,66,False,,False,False
+0032CRSsMYkp3TC4lJ,001Q7iLWceWwxJLQ6x,larry.byrd@figueroaplc.com,Larry,Byrd,Director of Cybersecurity,Active,Security Leadership,,,57,False,,False,False
+003s4RSnE9I9egVuBp,00195e5bzVV8OA9x14,susan.sanders@cortezllc.com,Susan,Sanders,SOC Analyst,Active,,Individual Contributor,2026-04-20 11:30:00,19,False,,False,False
+003U1yah4uUEeIp6iY,001AUuRqphlhHVlnES,jennifer.jones@georgegroup.com,Jennifer,Jones,,Active,Security Operations,,,34,False,,False,False
+003kPaqBlS3HBcNGPO,0013MsHarAJOCBnD3X,hannah.burton@bakerandsons.com,Hannah,Burton,Solutions Engineer,Disqualified,Partner / Channel,VP,,45,False,,False,False
+003xmp4mabaYQd7fZP,001iYeJA7oqtXRTtqe,curtis.barton@johnston-odonnell.com,Curtis,Barton,Chief Security Officer,Stale,,VP,,45,False,,False,False
+003MM5yAoguaOannOr,001g2luCq1GNLLKv0M,melissa.burke@russell-daniels.com,Melissa,Burke,Director of Cybersecurity,Active,,VP,,62,False,,False,False
+0039SX5JpfuNy5VikV,001cdWFMFzRfHMrtFm,david.riggs@curryinc.com,David,Riggs,,Disqualified,Security Operations,,,17,False,,False,False
+003BFTFRabVhoApeiE,0015BRh8LojIIf94Ch,kimberly.reed@walkerllc.com,Kimberly,Reed,,Nurture,,,,59,False,,False,False
+003B2itWcXzYUoTvmd,0015qOpx4kysRoORaD,ross.wood@meadowsplc.com,Ross,Wood,Cybersecurity Manager,Stale,Security Management,,,37,False,,False,False
+003GlNeE7d96hkIXmF,001iwItCqpgrxMp1ju,william.peterson@johnson-doyle.com,William,Peterson,,Active,Security Operations,,2026-04-20 11:30:00,17,False,,False,False
+003sJ7m1D6wxDALAj7,,melissa.short@orphan-enterprise.com,Melissa,Short,,Active,,Manager,,37,False,,False,False
+003HIkxsrIDuSm4a1T,001DN8pbWvTMVTucHY,daniel.yu@harris-walters.com,Daniel,Yu,Director of Information Security,Active,Security Leadership,Individual Contributor,,16,False,,False,False
+003NKzc5xJmBp4SFEQ,001tTThRRk7GWSkhWq,cynthia.poole@williamsjohnsonandwright.com,Cynthia,Poole,SecOps Manager,Active,Security Management,VP,,43,False,,False,True
+003YNPROqCQpL70aVN,0018EE5GXTeLYHteOt,jasmine.graham@williams-cook.com,Jasmine,Graham,Security Director,Stale,Security Leadership,,,42,False,,True,False
+0032kAQFH2KTU51gJX,001Y7gbtP7ySeQMgV0,jessica.sheppard@smith-bowen.com,Jessica,Sheppard,CISO,Stale,Security Executive,Director,,30,False,,False,False
+0039YaeRGOTkxRml6B,001CtlRJoWcURYxPY8,joseph.morton@jonesinc.com,Joseph,Morton,SOC Analyst,Active,Security Operations,,,49,False,,False,False
+0032B4gNefhdboEVaq,001HnKYaXRvj7uff0L,amanda.webb@doyleltd.com,Amanda,Webb,Information Security Manager,Active,Security Management,,2026-04-20 11:30:00,63,False,,False,False
+0039V5DuAw39Y6Pxdw,001jdg3vSFkpBBGjxr,ryan.simon@evansstewartandwalton.com,Ryan,Simon,Information Security Manager,Active,,,,40,False,,False,False
+003iL1rRYwMODzl97Y,0019NIQ0Wobtqn62tO,joseph.christian@guzmanhoffmanandbaldwin.com,Joseph,Christian,Information Security Manager,Active,,Individual Contributor,,55,False,,False,False
+003ETXv66DORgxLS12,0013Vpazov026aO0Tg,mariah.miller@higginsstricklandandmartin.com,Mariah,Miller,Security Analyst,Stale,Security Operations,,,49,False,,True,False
+00399C37DHpk6Rg9b5,001Ze11MFCIX3BYOtD,nicole.sanchez@edwardsbakerandanderson.com,Nicole,Sanchez,,Nurture,Security Operations,,,26,False,,False,False
+003hiHSfQ25VLNxSTx,001s9BvYB9WoYKvSNk,steven.bishop@castaneda-ashley.com,Steven,Bishop,Threat Analyst,Stale,Security Operations,VP,,27,False,,False,False
+003ffT6Uhw07JadH08,001YYojmLVOkVEUVB5,nicholas.johnson@sandoval-cunningham.com,Nicholas,Johnson,CISO,Nurture,Security Executive,Individual Contributor,,41,False,,False,False
+003HCi6ZECLjPXRLt9,001ioRRdzHzmA4KR1V,melissa.white@carlson-cruz.com,Melissa,White,Software Engineer,Active,Non-Prospect,C-Suite,,51,False,,False,False
+0037dYjS05nT5W1TsY,001fSEVQOEXfnQsKDG,jason.salinas@ryanplc.com,Jason,Salinas,,Stale,,,,19,False,,False,False
+003UyGrRm1yiUJX0RC,001AUuRqphlhHVlnES,matthew.beard@georgegroup.com,Matthew,Beard,,Active,Security Leadership,Director,,43,False,,False,False
+003UTaTJQ9j6A05f8l,0011Id9Z850kEnydx9,jacqueline.hill@mcclurewardandlee.com,Jacqueline,Hill,VP Security,Active,,Individual Contributor,,54,False,,False,False
+003coEQ7OxQXOW1OrO,,alejandro.vaughan@orphan-enterprise.com,Alejandro,Vaughan,SOC Analyst,Active,,Director,2026-04-20 11:30:00,51,False,,False,False
+003bJJqUXlENAJgd4X,001tUJrhQR6FEecAtp,christopher.cortez@martinroseandobrien.com,Christopher,Cortez,Cybersecurity Manager,Nurture,Security Management,,2026-04-20 11:30:00,43,False,,False,False
+003EGKSWhU73lLlIXh,001xavU07zUHLnnBbu,tracy.chang@ferrellriceandmaddox.com,Tracy,Chang,,Nurture,,,2026-04-20 11:30:00,30,False,,False,False
+003hs7k8Opc64sHiEt,001xG7YXipN2Ig00rV,hannah.brewer@turnerriggsandroman.com,Hannah,Brewer,Security Analyst,Disqualified,,Manager,,64,False,,False,False
+003ci1niIKrTAIqOkC,001zi6sEg3iCPU6zUj,travis.mcguire@morton-chase.com,Travis,Mcguire,,Stale,Security Leadership,,,27,False,,False,False
+003qNOSIOFkYtWx7pq,001L2lVSID1u7a67h9,christopher.walker@lewiskennedyandsantana.com,Christopher,Walker,,Active,Security Management,,,38,False,,False,False
+003WjXqg8n7WhG2KYf,001oBrUBHtYDZw69Cr,heather.torres@moore-bass.com,Heather,Torres,SecOps Manager,Active,,Manager,,29,False,,False,True
+0036yvT8GK0DhaFjhx,001UpCXiaZ8iZxNNKq,bonnie.kennedy@garciallc.com,Bonnie,Kennedy,,Active,,,,46,False,,False,False
+003l9XFrA62Ys16ztf,0014HZKjht3X13npgW,alyssa.coleman@gray-mayo.com,Alyssa,Coleman,,Active,Partner / Channel,,,31,False,,False,False
+003IE27AFTDF93RzM4,,julie.rivera@orphan-enterprise.com,Julie,Rivera,Chief Security Officer,Active,Security Executive,,,35,False,,False,False
+0036Z2GLL7P2Gne0F7,001DXQsedBEmLtST18,jacqueline.nelson@hancockandsons.com,Jacqueline,Nelson,,Active,,Manager,,21,False,,False,False
+003HVhssnTJns5NZcC,001ozlNAbMmKyRmUYd,john.martinez@mccarthyinc.com,John,Martinez,Information Security Manager,Nurture,Security Management,Individual Contributor,,30,False,,False,False
+003a3lvgEfFjhEjOoy,001UnAvwSWJfdjMPqP,james.wilson@woodscalhounandschmidt.com,James,Wilson,,Nurture,,,,29,False,,False,False
+003BiUa2RgriAubP67,001mn1uj3a1iipkOba,amanda.gill@russellgroup.com,Amanda,Gill,Director of Information Security,Nurture,,Director,,36,False,,False,False
+003V2F50yggbjFVoQv,001pxYyhIKHQI7CRBs,jacob.robinson@manninggroup.com,Jacob,Robinson,Director of Information Security,Stale,Security Leadership,Individual Contributor,,29,False,,True,False
+003AMTlrhqRPADWgTL,001f7ZJ69PqcUDO4lK,todd.hardy@hickmanltd.com,Todd,Hardy,,Nurture,Security Operations,,,62,False,,False,False
+0035AMfdzsNouDFNsq,001rNHu9GCLgR0OVSn,tiffany.warren@house-glover.com,Tiffany,Warren,,Active,Security Leadership,C-Suite,,46,False,,False,False
+003dUnD4gl6wsgaI1u,001Ybd3Bh4ZucCkJYy,justin.garcia@burkemartinezandriggs.com,Justin,Garcia,Cybersecurity Manager,Nurture,Security Management,,,46,False,,False,False
+003nx3iUhK4OlR5eHv,001iYeJA7oqtXRTtqe,james.perez@johnston-odonnell.com,James,Perez,,Active,Security Executive,C-Suite,,69,False,,False,False
+003S3V0IvwNhBDG7Xk,001W1GC7dDyQE4efLe,harry.smith@graygroup.com,Harry,Smith,,Stale,,Director,,77,False,,False,False

@@ -1,0 +1,201 @@
+account_id,account_name,industry,employee_count,annual_revenue,country,is_icp_qualified,is_named_account,intent_score,do_not_contact
+001NbrnTP3fAbnFbmO,"Rodriguez, Figueroa and Sanchez",Finance,44,14427000.0,Japan,False,False,15,False
+001HnKYaXRvj7uff0L,Doyle Ltd,Energy,6190,3363523000.0,Canada,False,True,57,False
+001YTH8xIZM1JRcore,"Mcclain, Miller and Henderson",Technology,11,3251000.0,United States,False,False,43,False
+001ogrNwwmq6OLkTkx,Davis and Sons,Cybersecurity,282,113418000.0,United States,True,False,66,False
+0019NIQ0Wobtqn62tO,"Guzman, Hoffman and Baldwin",Energy,69,24253000.0,United States,False,False,47,False
+001y4CqpIqK3yn9Ffc,"Gardner, Robinson and Lawrence",Technology,11605,4613427000.0,United States,True,True,69,False
+001gMXAdx9G81aSQHq,Blake and Sons,Cybersecurity,146,62232000.0,United States,True,False,59,False
+001NgAC72qFl41sNLj,"Henderson, Ramirez and Lewis",Technology,265,77452000.0,United States,True,False,89,False
+001VHWGaub52Ztd26f,Garcia-James,Cybersecurity,8054,3159627000.0,United States,True,True,87,False
+001EeVVhDIq2AnHTmt,Abbott-Munoz,Cybersecurity,266,99404000.0,United States,True,False,72,False
+0019OBGhnuKoneNo41,Blair PLC,Cybersecurity,254,88166000.0,United States,True,False,61,False
+001eoPni6JDWYlgAAC,Dudley Group,Healthcare,156,41056000.0,United Kingdom,False,False,39,False
+001TP9gyv1plBArp5B,Arnold Ltd,Technology,1089,360910000.0,United States,True,True,92,False
+0011Id9Z850kEnydx9,"Mcclure, Ward and Lee",Finance,306,95546000.0,Canada,True,False,71,False
+001qWCA79ISjs8JHUd,Williams and Sons,Retail,151,16808000.0,Germany,False,False,63,False
+001KF0j7elKPoh3pKM,Galloway-Wyatt,Manufacturing,159,22528000.0,France,False,False,26,False
+001zKG5mSoyPstUeC9,James Group,Manufacturing,1000,151545000.0,Germany,False,True,20,False
+0019enq522wjZRL9Oa,"Flowers, Martin and Kelly",Retail,163,23700000.0,United States,False,False,32,False
+001YsP6ihgIqLSmNqE,"Adams, Zuniga and Wong",Education,45,3804000.0,United States,False,False,43,False
+00140fAraVNqTIAae2,"Reid, Ferguson and Sanchez",Technology,49,14064000.0,United States,False,False,22,False
+0014HZKjht3X13npgW,Gray-Mayo,Education,59,7231000.0,United States,False,False,32,False
+0012zMj518Y2bTu5X1,"Watts, Robinson and Nguyen",Healthcare,9749,3005226000.0,United States,False,True,30,False
+001YqWg21nYCsXoblu,Perez Inc,Technology,120,34185000.0,United Kingdom,True,False,84,False
+00117rNy8H6h8l7qgA,Morales-Jones,Healthcare,86,18589000.0,United States,False,False,31,False
+001TtLFxJpRa5HSUPw,"Walter, Edwards and Rios",Retail,307,41642000.0,Germany,False,False,39,False
+001ePut0SstzyshA6P,Wilkerson-Day,Technology,192,67577000.0,France,False,False,31,False
+0013MsHarAJOCBnD3X,Baker and Sons,Healthcare,209,43703000.0,France,False,False,22,False
+001kfFNuYUPnmbpD0e,"Hoffman, Baker and Richards",Energy,15197,7233322000.0,United States,False,True,8,False
+001zNmREpOaUVgAk7G,"Ross, Robinson and Bright",Finance,232,79802000.0,United Kingdom,True,False,72,False
+001dp0CXP9K63LSFZH,"Snyder, Campos and Callahan",Healthcare,50,13651000.0,Germany,False,False,18,False
+0013UDqpNVGMrerqtH,Burton Ltd,Cybersecurity,264,99021000.0,United States,True,False,88,False
+001ioRRdzHzmA4KR1V,Carlson-Cruz,Energy,96,46938000.0,United States,False,False,28,True
+001xavU07zUHLnnBbu,"Ferrell, Rice and Maddox",Healthcare,107,34839000.0,United States,False,False,72,False
+001QzkChMbyIbNiCdx,Frazier Inc,Cybersecurity,233,74508000.0,United States,True,False,65,False
+001nuVxUZpfbH9vOWO,"Dyer, Potter and Mack",Retail,147,24159000.0,United Kingdom,False,False,21,False
+001U6mbjhPInRVkLUh,Rodriguez-Graham,Manufacturing,57,11048000.0,Canada,False,False,31,False
+001Y7gbtP7ySeQMgV0,Smith-Bowen,Manufacturing,122,21488000.0,Germany,False,False,55,False
+001Lh8WvAwFv0Yg7NZ,"Baker, Mason and White",Healthcare,263,63808000.0,Canada,False,False,32,False
+001RBT7qYHDBTq0Zf2,Harrell LLC,Energy,23,10580000.0,United States,False,False,12,True
+001pCLxb0lnXv2Rra6,"Romero, Gonzalez and Brooks",Manufacturing,6432,1144622000.0,United States,False,True,53,False
+001fSEVQOEXfnQsKDG,Ryan PLC,Energy,49063,23071119000.0,United States,False,True,50,False
+001AUuRqphlhHVlnES,George Group,Finance,630,220894000.0,United States,True,False,77,False
+0018GrgmolaHr8IRh1,Rodriguez LLC,Technology,59,16290000.0,Japan,False,False,22,False
+001E2JDBld6DYyeNdj,Allen-Allen,Finance,535,188548000.0,Canada,True,False,94,False
+001Is9hVLXnGBB19sM,"Arroyo, Miller and Tucker",Energy,62,30797000.0,United Kingdom,False,False,10,False
+001LT6mnOjkeaBKsoR,Spence PLC,Technology,37,13453000.0,United States,False,False,36,False
+001RCQ5WMO5AHO4Zek,Anderson Group,Finance,19,7960000.0,United States,False,False,44,True
+001tUJrhQR6FEecAtp,"Martin, Rose and Obrien",Finance,37,17264000.0,United Kingdom,False,False,46,False
+001f7ZJ69PqcUDO4lK,Hickman Ltd,Technology,8595,2943386000.0,United Kingdom,True,True,75,False
+001NEfvuP1uRr6YICt,"Harris, Collins and Carney",Finance,134,50042000.0,United States,True,False,94,False
+001u8zF9OHzlwUMVmI,"Brooks, Lam and Hayes",Technology,2766,830162000.0,United States,True,True,89,True
+0015BRh8LojIIf94Ch,Walker LLC,Manufacturing,5538,1070567000.0,United States,False,True,44,False
+001ZESFqZ8pIx5F21r,Chapman and Sons,Healthcare,197,59987000.0,Germany,False,False,78,False
+001Wz5FYrsK9EjHvIH,"Robinson, Jones and Welch",Finance,63,30321000.0,Canada,False,False,60,False
+001CtlRJoWcURYxPY8,Jones Inc,Healthcare,4554,1398499000.0,Canada,False,True,30,False
+001EcFK12BGCSzOjD8,Jones-Young,Finance,277,87276000.0,United States,True,False,72,False
+001uQO001xtSV2ceN5,"Washington, Ryan and Cummings",Retail,23,2776000.0,United Kingdom,False,False,47,False
+0019UAgN2BR4cXsxjG,"Johnston, Sanchez and Kennedy",Manufacturing,2878,505115000.0,Canada,False,True,15,False
+001JXke1Mo4iCppaX3,Lee-Davis,Finance,208,65941000.0,France,False,False,17,False
+001QjBvKNAp0mxDoJJ,Gomez-Jenkins,Technology,407,106195000.0,Germany,False,False,18,False
+0019s8OrJQUdLE4rXL,"Brown, Valdez and Lucas",Finance,66,20693000.0,United States,False,False,53,False
+001vNMQSOZM4OtBJTf,Powell LLC,Finance,17534,6917860000.0,France,False,True,9,False
+001sUkiH8G4ZpZDYUv,Wright and Sons,Technology,16042,5514531000.0,United States,True,True,95,False
+001h7i71S87XwXaHCP,"West, Henderson and Ramirez",Cybersecurity,240,104047000.0,Germany,False,False,9,False
+001PKY6gob2I4ndZ4s,Baxter Inc,Technology,183,61087000.0,France,False,False,44,False
+001zi6sEg3iCPU6zUj,Morton-Chase,Finance,126,59904000.0,United Kingdom,True,False,55,False
+001zgEz6cwB61gQH8w,Williams PLC,Retail,32,3565000.0,France,False,False,36,False
+001ylh0CPNLbWphJeV,Novak and Sons,Energy,243,132913000.0,United States,False,False,48,False
+001mn1uj3a1iipkOba,Russell Group,Cybersecurity,233,78663000.0,Germany,False,False,67,False
+001WoukdTGUDWFgF6c,Hancock Inc,Technology,453,172702000.0,United States,True,False,97,False
+001W1GC7dDyQE4efLe,Gray Group,Energy,153,66266000.0,United States,False,False,34,False
+001rNHu9GCLgR0OVSn,House-Glover,Technology,154,63518000.0,Germany,False,False,81,False
+001BovCzfAPxj5eZff,Henderson-Bernard,Healthcare,90,19354000.0,France,False,False,70,False
+001TYIKIuhvPU1S8Lv,"Stanley, Tucker and Lee",Cybersecurity,28,9157000.0,United Kingdom,False,False,20,False
+001JnOng0wVJY08YMN,Novak PLC,Finance,139,56721000.0,Canada,True,False,90,False
+001b5ZqlRtva1JyiNb,"Daniels, Adkins and Brown",Technology,338,118250000.0,United States,True,False,85,False
+001UnAvwSWJfdjMPqP,"Woods, Calhoun and Schmidt",Technology,25,7992000.0,United States,False,False,64,False
+001EBqUhArQEPcyLas,Yu Inc,Finance,440,184876000.0,Canada,True,False,90,False
+001nipuaUkxRFZXe1c,Jones Inc,Technology,93,38056000.0,France,False,False,37,False
+001b51JJRzhbuXMZ5f,"Hensley, Powell and David",Healthcare,1000,215012000.0,United States,False,True,21,False
+0010pKGytvukFhF4vT,"Sanchez, Wheeler and Harvey",Technology,235,76540000.0,United Kingdom,True,False,84,False
+001YYojmLVOkVEUVB5,Sandoval-Cunningham,Technology,92,26999000.0,United States,False,False,23,False
+001INM1MjeBsrdFtCd,Donovan-Harris,Technology,126,45538000.0,United States,True,False,54,False
+001Ze11MFCIX3BYOtD,"Edwards, Baker and Anderson",Energy,15,7989000.0,United States,False,False,16,False
+001jdg3vSFkpBBGjxr,"Evans, Stewart and Walton",Manufacturing,73,12749000.0,Canada,False,False,44,False
+001zuLWOefQrSO42uK,Smith PLC,Finance,1317,456976000.0,Canada,True,True,86,False
+001iv7RyK6txXYPZTQ,"Ferrell, Jones and Lewis",Finance,20653,7125474000.0,United States,True,True,70,False
+001GOAwwln6Eoie0gV,Anderson-Bailey,Technology,13,3920000.0,United States,False,False,20,False
+001Z2cuVixkZVYkBzP,Suarez LLC,Energy,54,24201000.0,United Kingdom,False,False,42,False
+001oBrUBHtYDZw69Cr,Moore-Bass,Finance,119,43898000.0,United States,True,False,84,False
+001xG7YXipN2Ig00rV,"Turner, Riggs and Roman",Cybersecurity,86,25018000.0,Japan,False,False,27,False
+001q4jB6nBvbdFo9xb,"Smith, Montoya and Evans",Technology,96,37965000.0,United States,False,False,17,False
+00150OXirZRiRBaepZ,"Garcia, Humphrey and Baker",Finance,6648,3113726000.0,Japan,False,True,56,False
+001ITGgrscAXCg4KbF,Newton and Sons,Technology,111,37670000.0,United Kingdom,True,False,81,False
+001piAMozPf8eGF9Iy,Campbell-Clark,Healthcare,154,35420000.0,United States,False,False,20,False
+001DN8pbWvTMVTucHY,Harris-Walters,Cybersecurity,10,3487000.0,United Kingdom,False,False,39,False
+001kWCRNYdWCscmc5F,Wagner-King,Cybersecurity,2464,946039000.0,United States,True,True,87,False
+0019HpUlwW1uhw3U3x,Davis Group,Finance,237,114008000.0,United States,True,False,89,False
+0018EE5GXTeLYHteOt,Williams-Cook,Technology,186,71871000.0,Canada,True,False,63,False
+001LAQvc1v9r86eNwX,Walsh LLC,Technology,497,189807000.0,United States,True,False,84,False
+001Q7iLWceWwxJLQ6x,Figueroa PLC,Cybersecurity,95,31383000.0,Germany,False,False,36,False
+001VJGyOphTExIqqB9,"Patterson, Smith and Jones",Healthcare,387,122580000.0,United States,False,False,32,False
+001r4Eh0C3BfQ0tveH,"Mckee, Gardner and Davenport",Retail,5308,642819000.0,United Kingdom,False,True,21,False
+00130S5NXFhmiXbIwX,"Tran, Jordan and Williams",Energy,200,100698000.0,United States,False,False,22,False
+001ILft9SGVZe8NBQv,Nolan-Flynn,Cybersecurity,20365,8518898000.0,Canada,True,True,73,False
+0012WNl7A4dhjkuRv6,Nolan and Sons,Technology,6726,2105590000.0,Germany,False,True,55,False
+00130pNIhsHFk6jOSL,"Wright, Garcia and Deleon",Cybersecurity,417,149920000.0,Canada,True,False,69,False
+0010IZbcNJOVzNEMr7,Dickson-Brady,Technology,297,93151000.0,France,False,False,36,False
+001DXQsedBEmLtST18,Hancock and Sons,Technology,99,38749000.0,United Kingdom,False,False,67,False
+001iwItCqpgrxMp1ju,Johnson-Doyle,Healthcare,125,27267000.0,France,False,False,41,False
+001JtVEFEtb6F7nvdE,Patton-Jenkins,Finance,110,35136000.0,Canada,True,False,96,False
+0012ODH0A2TVwyJmIe,"Shields, Cochran and Adams",Technology,242,80612000.0,France,False,False,42,False
+001FVr9Qh8yXv6UmFF,"Rodriguez, Brennan and Garrison",Technology,258,103013000.0,United States,True,False,73,False
+001ciuDCLFuMk9TsuZ,Gonzalez Group,Healthcare,14,3608000.0,United States,False,False,21,False
+001HRsYwP8KXSQbD7W,Torres-Pope,Finance,317,133834000.0,United States,True,False,50,False
+001WJSKkMM0jQb6gbt,Walker Ltd,Technology,1000,315913000.0,Japan,False,True,18,False
+001jQzW52TdimuPGtk,Ross LLC,Finance,2057,976694000.0,United Kingdom,True,True,67,False
+0014vvVSNQLlpIn8sr,Rasmussen LLC,Technology,220,56835000.0,United States,True,False,87,False
+001mRtv5XqhPx8Y7Xs,May-Ross,Finance,41,13654000.0,United States,False,False,60,False
+001rSvBpDmH5RiMKpP,"Rivera, Johnson and Wiley",Finance,144,54422000.0,United States,True,False,52,False
+001GNdzSgVaI5z52Dm,White-Estes,Healthcare,2224,637598000.0,United Kingdom,False,True,11,False
+0017tO4fJHS64k2k59,Johnson-Carlson,Manufacturing,62,9484000.0,United States,False,False,19,False
+001yE6752aJg8r9HE6,Chandler-Edwards,Healthcare,528,118831000.0,Germany,False,False,29,False
+0010DlgkCplTXJUk13,"Joyce, Wilson and Lam",Technology,48,12090000.0,United States,False,False,24,False
+001ZFfPliupqoU7sSa,Scott Ltd,Finance,39,14515000.0,France,False,False,42,False
+001OQdhtzF3Rth4sMn,Smith-Frost,Energy,57,24279000.0,United States,False,False,29,False
+001ijULzIDHPnpU2fB,"Mcdaniel, Bentley and Mclaughlin",Healthcare,287,87128000.0,United States,False,False,34,True
+001ReIdHFJjuGhmKfF,Diaz Inc,Cybersecurity,116,35889000.0,United States,True,False,63,False
+001YCFCdCYSyYUJcvd,"Mccall, Hanson and Alvarado",Education,27,3050000.0,United States,False,False,45,False
+00195e5bzVV8OA9x14,Cortez LLC,Technology,7814,3094368000.0,United States,True,True,90,False
+001xQPHOvlHGTnabsP,"Parker, Ortiz and Powell",Energy,104,43086000.0,United Kingdom,False,False,38,True
+001HGZpvr6SgYzV2am,Spencer-Lee,Technology,10081,3498310000.0,Canada,True,True,69,False
+001gcLRdTyon1dFrYT,"Bentley, Byrd and Orr",Cybersecurity,201,69905000.0,United States,True,False,84,False
+001tLPtsiOnsd624MA,"Carroll, Sullivan and Bass",Healthcare,1000,232619000.0,United States,False,True,42,False
+001E86PWtzjxUD0sRX,Mitchell-Jordan,Finance,87,27133000.0,United Kingdom,False,False,50,False
+0014I8IipmO50fSlqP,"Lawson, Morris and Ramos",Healthcare,149,45612000.0,United States,False,False,55,False
+001L2lVSID1u7a67h9,"Lewis, Kennedy and Santana",Cybersecurity,36,12937000.0,United Kingdom,False,False,61,False
+001DpLm4IWxHwqFEg8,"Jackson, Miller and Robertson",Manufacturing,97,20053000.0,United Kingdom,False,False,27,False
+001D04wzInjq5Jzjux,"Harvey, Davis and Crane",Cybersecurity,250,67494000.0,Japan,False,False,48,False
+001ZEOQpY7NEkXkSE4,Chambers and Sons,Retail,135,17590000.0,Japan,False,False,60,False
+001HNdc06PVz0oRaFx,Hernandez Inc,Cybersecurity,1103,314597000.0,Germany,False,True,17,False
+001MPMDEaIaGr8bYPX,Riggs PLC,Cybersecurity,7426,2372541000.0,Canada,True,True,80,False
+0014gfjlGYqyxzJ9oQ,Gibson Ltd,Cybersecurity,35,9390000.0,United Kingdom,False,False,61,True
+0010O1VfxIdakEAWJ1,"Lee, Horton and Snyder",Manufacturing,203,41065000.0,United States,False,False,81,False
+001fGcn13Dce53Ic5t,Hernandez Ltd,Healthcare,274,89844000.0,United States,False,False,53,False
+0017KUSyekoZy3uUi9,Stafford Inc,Finance,159,50701000.0,Canada,True,False,73,False
+001SF8dBZvV7yVbq9E,Robinson-Brock,Cybersecurity,1000,383618000.0,United States,True,True,67,False
+001w6AQOfMXSfjSNTt,"Holmes, Williams and Wright",Manufacturing,40,8374000.0,United States,False,False,69,False
+001gatwqilBIzbvfLu,Bryant Group,Energy,343,151877000.0,United States,False,False,26,False
+001xsyf348JkxisEdA,"Schmidt, Hansen and Stewart",Cybersecurity,516,168021000.0,United States,True,False,56,False
+001AEeppMKmgs6uMXu,Salazar-Ball,Manufacturing,85,16892000.0,France,False,False,48,False
+001uY18it6mt78sREJ,"Simmons, Meadows and Griffin",Manufacturing,41,7349000.0,United States,False,False,42,False
+001pxYyhIKHQI7CRBs,Manning Group,Technology,195,65986000.0,Germany,False,False,18,False
+001QYXzENpOSWe9DyF,Green-Wright,Finance,318,125668000.0,United States,True,False,58,False
+0015QHXw3HNfVOwOc8,"Ramirez, Strickland and Washington",Healthcare,5,1381000.0,United States,False,False,57,False
+001QyU7AaqFGJJByVK,Hill Inc,Healthcare,54,16955000.0,United Kingdom,False,False,55,False
+001Fvbgz7h6itCmDDB,"Mitchell, Nelson and Flores",Manufacturing,188,36068000.0,Germany,False,False,44,False
+001RtsYh0OPk9pkjI7,"Miller, Hernandez and Reyes",Technology,259,65352000.0,France,False,False,57,False
+001ozlNAbMmKyRmUYd,Mccarthy Inc,Cybersecurity,174,61477000.0,Canada,True,False,48,False
+001g2luCq1GNLLKv0M,Russell-Daniels,Energy,172,66591000.0,Japan,False,False,44,False
+001YRsMfihslQFzixl,Brown-Wall,Healthcare,194,47167000.0,United States,False,False,44,False
+001NQO9IEitBdwaiY7,Stein-Silva,Technology,125,32337000.0,France,False,False,29,False
+001FEQz0EfbVsrHkCU,"Smith, Gilmore and Johnston",Technology,77,30130000.0,United Kingdom,False,False,74,False
+001VIhhWZwZcSH9gZU,Smith-Bell,Healthcare,134,26967000.0,United States,False,False,11,False
+001s9BvYB9WoYKvSNk,Castaneda-Ashley,Finance,25,12361000.0,Canada,False,False,34,False
+001immdvrHuRrq19Qf,Medina-Navarro,Technology,83,23566000.0,Canada,False,False,17,False
+0017W491h1pSZVPEJq,"Hurst, Freeman and Nelson",Healthcare,98,31611000.0,United States,False,False,34,False
+001zCN2fFr6w6uaVTT,Johnson-Rogers,Finance,42,15878000.0,United States,False,False,63,False
+001CPwdHnAnqZuJJEv,"Yates, Ramsey and Pittman",Technology,282,91813000.0,United States,True,False,95,False
+001QdgWCh1Ba7mQiOj,Hooper PLC,Manufacturing,88,18158000.0,Canada,False,False,52,False
+0015qOpx4kysRoORaD,Meadows PLC,Technology,369,120645000.0,United States,True,False,61,False
+001ioQaRY9AiexTgt2,"Alvarado, Miller and Patterson",Healthcare,186,48898000.0,United States,False,False,16,False
+001iVUi9iGaOBSMjzQ,White-Green,Cybersecurity,93,25738000.0,Canada,False,False,33,False
+0011fgUKx7tirfILLW,Lewis-Murphy,Energy,117,60750000.0,United States,False,False,53,True
+001Q0OsGFUsd37EgEK,Ramirez-Bean,Finance,1042,454404000.0,United States,True,False,81,True
+001G895i1JwQV7Vbeq,King-Miller,Cybersecurity,4399,1432800000.0,United States,True,True,53,False
+001cdWFMFzRfHMrtFm,Curry Inc,Finance,292,98296000.0,United States,True,False,64,False
+001YHyNZQeRT0dfACL,Walker-Jones,Healthcare,8392,2698699000.0,Canada,False,True,15,False
+001tTThRRk7GWSkhWq,"Williams, Johnson and Wright",Healthcare,71,21695000.0,Germany,False,False,17,False
+0012VbYqdSJeCwEJwp,Howell and Sons,Finance,319,135393000.0,Germany,False,False,39,False
+001gJSoFc1pDxj51I4,Wells Inc,Technology,47,17757000.0,United States,False,False,46,False
+001TAtzSqexF3lX87e,"Gould, Marshall and Scott",Energy,74,40640000.0,Canada,False,False,74,False
+001Cr0uIamIsMCKEVm,Jackson-Lawson,Technology,13398,4923536000.0,United Kingdom,True,True,86,False
+0013Vpazov026aO0Tg,"Higgins, Strickland and Martin",Cybersecurity,108,29274000.0,United States,True,False,90,False
+001GoEd9Sf53GRx8ff,Rodriguez-Johnson,Finance,27,11186000.0,Canada,False,False,65,False
+001iYeJA7oqtXRTtqe,Johnston-Odonnell,Energy,71,25485000.0,United Kingdom,False,False,49,False
+001mWKjkCzH7mtqhjQ,Sanders-Espinoza,Technology,160,52596000.0,United States,True,False,69,False
+001ZRcZufpwFPq9bzC,Vargas Ltd,Finance,92,38125000.0,United States,False,False,23,False
+001UpCXiaZ8iZxNNKq,Garcia LLC,Education,325,29152000.0,United States,False,False,73,False
+001Ybd3Bh4ZucCkJYy,"Burke, Martinez and Riggs",Cybersecurity,63,22395000.0,United States,False,False,30,False
+001bQknlr2cMpszIdr,Reed Group,Finance,56,18491000.0,United States,False,False,13,False
+001im2GNXX9WwHE4Fy,"Wood, Hunter and Peterson",Healthcare,191,58131000.0,United States,False,False,42,False
+001ltn3Wd9GV98gOqY,Short-Garcia,Technology,125,50255000.0,United States,True,False,54,False
+0014d9n0Xv00kKXR4b,Reid-Poole,Finance,64,25436000.0,France,False,False,14,False
+001R6IIl92EtEfonGa,"Hernandez, Thompson and Boyd",Education,5172,673578000.0,Japan,False,True,36,False
+0014miS40ubK4W017x,"Nelson, Morton and Medina",Finance,7075,2143264000.0,United Kingdom,True,True,71,False
+0016ygsij6X7Ok8R5W,Marshall-Petersen,Technology,153,49070000.0,United Kingdom,True,False,90,False
+001nKktQhT66y97cL5,"Adams, Christian and Rivas",Healthcare,66,19020000.0,Germany,False,False,37,False
+0017nJ6iUo8k2fRN2B,Ramirez Group,Manufacturing,5482,1049985000.0,United Kingdom,False,True,25,False
+001qpepgaxT82ExHgD,Christensen PLC,Finance,7051,3012564000.0,United Kingdom,True,True,99,True
