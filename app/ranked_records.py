@@ -159,7 +159,8 @@ def render_ranked_records():
         st.markdown(f"<p style='margin:4px 0 4px;'><strong>Confidence:</strong> {selected_row['Confidence']}</p>", unsafe_allow_html=True)
         st.markdown(f"<p style='margin:4px 0 4px;'><strong>Primary Reason:</strong> {selected_row['Primary Reason']}</p>", unsafe_allow_html=True)
         if selected_row.get("agentic_recommendation_available"):
-            st.markdown(f"<p style='margin:4px 0 4px;'><strong>Why summary:</strong> {selected_row.get('why_summary', 'N/A')}</p>", unsafe_allow_html=True)
+            st.markdown("<h4 style='color:#F8FAFC; margin-bottom:4px;'>AI Insights</h4>", unsafe_allow_html=True)
+            st.markdown(f"<p style='margin:4px 0 4px;'><strong>Summary:</strong> {selected_row.get('why_summary', 'N/A')}</p>", unsafe_allow_html=True)
             st.markdown(f"<p style='margin:4px 0 4px;'><strong>Why now:</strong> {selected_row.get('why_now_summary', 'N/A')}</p>", unsafe_allow_html=True)
             st.markdown(f"<p style='margin:4px 0 4px;'><strong>Signal source:</strong> {selected_row.get('where_signal_summary', 'N/A')}</p>", unsafe_allow_html=True)
             if selected_row.get('risk_note'):

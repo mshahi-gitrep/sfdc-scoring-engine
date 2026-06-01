@@ -140,7 +140,7 @@ class SalesforceAgenticExplainer:
         confidence = "high confidence" if tier == "Hot" and eligibility == "Eligible" else (
             "moderate confidence" if tier in ["Warm", "Monitor"] else "lower confidence"
         )
-        descriptions.append(f"Overall outreach readiness is at {confidence} based on the current balance of signals.")
+        descriptions.append(f"Overall outreach readiness is at {confidence}, grounded in the available profile, engagement, and compliance signals.")
 
         return " ".join(descriptions)
 
@@ -173,8 +173,8 @@ class SalesforceAgenticExplainer:
 
         if not active_signals:
             return (
-                "The engagement history is dominated by passive marketing activity. "
-                "No webinar attendance, event participation, content downloads, or form submissions were observed within the current evaluation window."
+                "The engagement history is currently dominated by passive marketing touches. "
+                "No substantive buyer-initiated webinar, event, content, or form interaction was observed in the evaluation window."
             )
 
         recency_phrase = "No dated activity is available"
@@ -196,18 +196,18 @@ class SalesforceAgenticExplainer:
         blocked = bool(row.get("structural_block_flag", False)) or eligibility == "Blocked"
 
         if blocked:
-            return "Do not initiate outreach. Preserve intelligence for account planning and future qualification review."
+            return "Do not contact this prospect now; retain the intelligence for account planning, qualification, and future outreach windows."
         if tier == "Hot" and eligibility == "Eligible":
-            return "Contact within 24-48 hours while engagement is still active. Reference recent interactions and tailor messaging to observed interests."
+            return "Prioritize outreach in the next 24-48 hours and personalize the message using the recent engagement signals."
         if tier == "Hot" and eligibility == "Restricted":
-            return "Strong buying signals are present, but outreach restrictions apply. Review compliance requirements before assigning sales activity."
+            return "This prospect has strong buying signals, but outreach restrictions apply. Resolve compliance issues before planning contact."
         if tier == "Warm" and eligibility == "Eligible":
-            return "Add to an outbound sequence and monitor for additional engagement signals that could justify escalation."
+            return "Add this prospect to a targeted outbound sequence and monitor fresh activity for escalation signals."
         if tier == "Monitor":
-            return "Maintain in nurture and watch for increased activity, response velocity, or buying committee expansion."
+            return "Keep the prospect in nurture and watch for a new engagement trigger before applying direct BDR effort."
         if tier == "Cold":
-            return "Leave this prospect in nurture programs and monitor for a meaningful engagement trigger such as webinar registration, event attendance, content download, or form submission before assigning BDR effort."
-        return "Keep under observation and re-evaluate with new activity."
+            return "Hold off on active outreach; revisit once stronger engagement or profile fit emerges."
+        return "Keep under observation and re-evaluate when new evidence arrives."
 
     def _build_talking_points(
         self,

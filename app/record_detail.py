@@ -165,15 +165,15 @@ def render_record_detail():
 
     st.markdown("---")
     if row.get("agentic_recommendation_available"):
-        st.markdown("<h3 style='color:#F8FAFC;'>Agentic Recommendation Summary</h3>", unsafe_allow_html=True)
-        st.markdown(row.get("why_summary", "No summary available."))
-        st.markdown(f"**Why now:** {row.get('why_now_summary', 'No recent evidence summary available.')}" )
-        st.markdown(f"**Signal source:** {row.get('where_signal_summary', 'No campaign signal summary available.')}" )
+        st.markdown("<h3 style='color:#F8FAFC;'>AI Insights</h3>", unsafe_allow_html=True)
+        st.markdown(f"**Summary:** {row.get('why_summary', 'No summary available.')}")
+        st.markdown(f"**Why now:** {row.get('why_now_summary', 'No recent evidence summary available.')}")
+        st.markdown(f"**Source of signal:** {row.get('where_signal_summary', 'No campaign signal summary available.')}")
         if row.get("risk_note"):
             st.markdown(f"**Risk note:** {row.get('risk_note')}")
         talking_points = _normalize_talking_points(row.get("talking_points", ""))
         if talking_points:
-            st.markdown("**Recommended talking points:**")
+            st.markdown("**Suggested talking points:**")
             for point in talking_points:
                 st.markdown(f"- {point}")
     else:
