@@ -4,7 +4,6 @@ Salesforce Contact Data Generator Wrapper.
 This root-level script serves as the CLI entry point. It imports the core generator 
 implementation from the generators package and executes it.
 
-Author: Senior Data Engineer
 """
 
 import sys
