@@ -30,9 +30,13 @@ def _render_bar(label: str, count: int, max_value: int) -> str:
 
 def render_dashboard():
     """Renders the Executive Command Center page."""
-    st.markdown("<h1 style='color:#3B82F6; margin-bottom:4px;'>Who Should We Call This Week?</h1>", unsafe_allow_html=True)
-    st.markdown("This model evaluates every lead and contact and identifies the people most likely to engage with sales right now.")
-    st.markdown("---")
+    st.markdown(
+        "<div style='margin-bottom:32px;'>"
+        "<h1 style='color:#3B82F6; margin:0 0 8px; font-size:2.4rem;'>Who Should We Call This Week?</h1>"
+        "<p style='color:#94A3B8; margin:0; font-size:1.05rem; line-height:1.6;'>Executive insights into your most ready-to-engage prospects. This model analyzes all leads and contacts to surface the people most likely to engage with sales right now.</p>"
+        "</div>",
+        unsafe_allow_html=True
+    )
 
     df, _, _, _ = load_unified_data()
     df["company_name"] = df.get("account_name").fillna(df.get("account_id")).fillna("Unknown Company")
@@ -47,50 +51,110 @@ def render_dashboard():
         (df.get("bounced_or_left_company_flag", False))
     ].shape[0]
     blocked = df[(df.get("structural_block_flag", False)) | (df["eligibility_status"] == "Blocked")].shape[0]
+    total_records = len(df)
+    coverage_pct = round((total_records - needs_cleanup - blocked) / total_records * 100, 1) if total_records > 0 else 0
 
-    col1, col2, col3, col4 = st.columns(4)
+    st.markdown(
+        "<div style='padding:24px; border-radius:16px; background:linear-gradient(135deg, rgba(59,130,246,0.1) 0%, rgba(59,130,246,0.05) 100%); border:1px solid rgba(59,130,246,0.2); margin-bottom:28px;'>"
+        "<div style='display:flex; justify-content:space-between; align-items:center; gap:20px;'>"
+        "<div>"
+        "<h3 style='margin:0 0 8px; color:#F8FAFC;'>Ready-to-Call Rate</h3>"
+        "<p style='margin:0; color:#94A3B8; font-size:0.95rem;'>Percentage of your database ready for outreach</p>"
+        "</div>"
+        "<div style='text-align:right;'>"
+        f"<div style='font-size:2.8rem; font-weight:700; color:#3B82F6;'>{coverage_pct}%</div>"
+        f"<div style='color:#94A3B8; font-size:0.9rem; margin-top:4px;'>{ready_now + high_priority:,} of {total_records:,} prospects</div>"
+        "</div>"
+        "</div>"
+        "</div>",
+        unsafe_allow_html=True
+    )
+
+    col1, col2, col3, col4 = st.columns(4, gap="medium")
+    
     with col1:
-        st.markdown("<div style='padding:18px; border-radius:16px; background:#0E1728; border:1px solid rgba(255,255,255,0.08);'>"
-                    f"<h3 style='margin:0; color:#F8FAFC;'>🔥 Ready Now</h3>"
-                    f"<p style='font-size:2.2rem; margin:10px 0 0; color:#F8FAFC;'>{ready_now:,}</p>"
-                    "<p style='margin:8px 0 0; color:#94A3B8;'>Immediate outreach opportunities</p></div>", unsafe_allow_html=True)
+        st.markdown(
+            "<div style='padding:20px; border-radius:14px; background:#0E1728; border:1px solid rgba(34,197,94,0.2);'>"
+            "<div style='display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;'>"
+            "<h3 style='margin:0; color:#F8FAFC;'>🔥 Priority</h3>"
+            "<span style='background:rgba(34,197,94,0.1); color:#22C55E; padding:4px 10px; border-radius:12px; font-size:0.8rem; font-weight:600;'>Ready Now</span>"
+            "</div>"
+            f"<p style='font-size:2.2rem; font-weight:700; margin:8px 0 0; color:#22C55E;'>{ready_now:,}</p>"
+            "<p style='margin:8px 0 0; color:#94A3B8; font-size:0.9rem;'>Immediate outreach opportunities</p>"
+            "</div>",
+            unsafe_allow_html=True
+        )
+    
     with col2:
-        st.markdown("<div style='padding:18px; border-radius:16px; background:#0E1728; border:1px solid rgba(255,255,255,0.08);'>"
-                    f"<h3 style='margin:0; color:#F8FAFC;'>⚡ High Priority</h3>"
-                    f"<p style='font-size:2.2rem; margin:10px 0 0; color:#F8FAFC;'>{high_priority:,}</p>"
-                    "<p style='margin:8px 0 0; color:#94A3B8;'>Strong outreach-ready prospects</p></div>", unsafe_allow_html=True)
+        st.markdown(
+            "<div style='padding:20px; border-radius:14px; background:#0E1728; border:1px solid rgba(59,130,246,0.2);'>"
+            "<div style='display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;'>"
+            "<h3 style='margin:0; color:#F8FAFC;'>⚡ Active</h3>"
+            "<span style='background:rgba(59,130,246,0.1); color:#3B82F6; padding:4px 10px; border-radius:12px; font-size:0.8rem; font-weight:600;'>High Priority</span>"
+            "</div>"
+            f"<p style='font-size:2.2rem; font-weight:700; margin:8px 0 0; color:#3B82F6;'>{high_priority:,}</p>"
+            "<p style='margin:8px 0 0; color:#94A3B8; font-size:0.9rem;'>Strong outreach-ready prospects</p>"
+            "</div>",
+            unsafe_allow_html=True
+        )
+    
     with col3:
-        st.markdown("<div style='padding:18px; border-radius:16px; background:#0E1728; border:1px solid rgba(255,255,255,0.08);'>"
-                    f"<h3 style='margin:0; color:#F8FAFC;'>⚠ Needs Cleanup</h3>"
-                    f"<p style='font-size:2.2rem; margin:10px 0 0; color:#F8FAFC;'>{needs_cleanup:,}</p>"
-                    "<p style='margin:8px 0 0; color:#94A3B8;'>Records with data quality issues</p></div>", unsafe_allow_html=True)
+        st.markdown(
+            "<div style='padding:20px; border-radius:14px; background:#0E1728; border:1px solid rgba(245,158,11,0.2);'>"
+            "<div style='display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;'>"
+            "<h3 style='margin:0; color:#F8FAFC;'>📋 Cleanup</h3>"
+            "<span style='background:rgba(245,158,11,0.1); color:#F59E0B; padding:4px 10px; border-radius:12px; font-size:0.8rem; font-weight:600;'>Action</span>"
+            "</div>"
+            f"<p style='font-size:2.2rem; font-weight:700; margin:8px 0 0; color:#F59E0B;'>{needs_cleanup:,}</p>"
+            "<p style='margin:8px 0 0; color:#94A3B8; font-size:0.9rem;'>Records with data issues</p>"
+            "</div>",
+            unsafe_allow_html=True
+        )
+    
     with col4:
-        st.markdown("<div style='padding:18px; border-radius:16px; background:#0E1728; border:1px solid rgba(255,255,255,0.08);'>"
-                    f"<h3 style='margin:0; color:#F8FAFC;'>🚫 Blocked</h3>"
-                    f"<p style='font-size:2.2rem; margin:10px 0 0; color:#F8FAFC;'>{blocked:,}</p>"
-                    "<p style='margin:8px 0 0; color:#94A3B8;'>Records not contactable this week</p></div>", unsafe_allow_html=True)
+        st.markdown(
+            "<div style='padding:20px; border-radius:14px; background:#0E1728; border:1px solid rgba(239,68,68,0.2);'>"
+            "<div style='display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;'>"
+            "<h3 style='margin:0; color:#F8FAFC;'>🚫 Blocked</h3>"
+            "<span style='background:rgba(239,68,68,0.1); color:#EF4444; padding:4px 10px; border-radius:12px; font-size:0.8rem; font-weight:600;'>Hold</span>"
+            "</div>"
+            f"<p style='font-size:2.2rem; font-weight:700; margin:8px 0 0; color:#EF4444;'>{blocked:,}</p>"
+            "<p style='margin:8px 0 0; color:#94A3B8; font-size:0.9rem;'>Not contactable this week</p>"
+            "</div>",
+            unsafe_allow_html=True
+        )
 
-    st.markdown("---")
+    st.markdown("")
+    st.markdown(
+        "<div style='padding:24px; border-radius:16px; background:#0E1728; border:1px solid rgba(255,255,255,0.08);'>"
+        "<div style='display:flex; justify-content:space-between; align-items:center; gap:20px;'>"
+        "<div>"
+        "<h3 style='margin:0 0 8px; color:#F8FAFC; font-size:1.2rem;'>BDR Efficiency Multiplier</h3>"
+        "<p style='margin:0; color:#94A3B8; font-size:0.95rem;'>Expected lift in quality conversations using readiness ranking vs random outreach</p>"
+        "</div>"
+        "<div style='text-align:right;'>"
+        "<div style='font-size:3rem; font-weight:700; color:#3B82F6; line-height:1;'>3.5×</div>"
+        "</div>"
+        "</div>"
+        "<div style='margin-top:20px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.08);'>"
+        "<div style='display:grid; grid-template-columns:1fr 1fr; gap:16px;'>"
+        "<div style='padding:16px; border-radius:12px; background:#13203B;'>"
+        "<div style='color:#94A3B8; font-size:0.9rem; margin-bottom:8px;'>Random Outreach</div>"
+        "<div style='font-size:2rem; font-weight:700; color:#F8FAFC;'>2%</div>"
+        "<div style='color:#94A3B8; font-size:0.8rem; margin-top:4px;'>Expected response rate</div>"
+        "</div>"
+        "<div style='padding:16px; border-radius:12px; background:#13203B;'>"
+        "<div style='color:#94A3B8; font-size:0.9rem; margin-bottom:8px;'>Readiness Ranked</div>"
+        "<div style='font-size:2rem; font-weight:700; color:#22C55E;'>7%</div>"
+        "<div style='color:#94A3B8; font-size:0.8rem; margin-top:4px;'>Expected response rate</div>"
+        "</div>"
+        "</div>"
+        "</div>"
+        "</div>",
+        unsafe_allow_html=True
+    )
 
-    st.markdown("<div style='padding:22px; border-radius:16px; background:#0E1728; border:1px solid rgba(255,255,255,0.08);'>"
-                "<div style='display:flex; justify-content:space-between; align-items:center; gap:20px;'>"
-                "<div><h3 style='margin:0; color:#F8FAFC;'>Potential BDR Efficiency Gain</h3>"
-                "<p style='margin:6px 0 0; color:#94A3B8;'>Ranked outreach is built to deliver more qualified conversations and less wasted time.</p></div>"
-                "<div style='text-align:right; color:#F8FAFC;'><div style='font-size:1.8rem; font-weight:700;'>3.5x</div>"
-                "<div style='color:#94A3B8; margin-top:4px;'>Expected response lift vs random outreach</div></div>"
-                "</div>"
-                "<div style='display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:20px;'>"
-                "<div style='padding:14px; border-radius:14px; background:#13213B;'>"
-                "<div style='color:#94A3B8; font-size:0.92rem;'>Random Outreach</div>"
-                "<div style='font-size:1.7rem; font-weight:700; color:#F8FAFC;'>2%</div>"
-                "</div>"
-                "<div style='padding:14px; border-radius:14px; background:#13213B;'>"
-                "<div style='color:#94A3B8; font-size:0.92rem;'>Readiness Ranked Outreach</div>"
-                "<div style='font-size:1.7rem; font-weight:700; color:#F8FAFC;'>7%</div>"
-                "</div>"
-                "</div></div>", unsafe_allow_html=True)
-
-    st.markdown("---")
+    st.markdown("")
 
     signal_counts = {
         "Recent Webinar Activity": int((df.get("webinar_attended_count", 0) > 0).sum()),
@@ -109,20 +173,31 @@ def render_dashboard():
     signal_max = max(signal_counts.values()) if signal_counts else 1
     blocker_max = max(blocker_counts.values()) if blocker_counts else 1
 
-    col_left, col_right = st.columns([1, 1])
+    st.markdown(
+        "<h2 style='color:#F8FAFC; margin-bottom:4px; font-size:1.3rem;'>Signal Analysis</h2>"
+        "<p style='color:#94A3B8; margin:0 0 20px;'>Distribution of engagement signals and common blockers across your database</p>",
+        unsafe_allow_html=True
+    )
+
+    col_left, col_right = st.columns(2, gap="large")
+    
     with col_left:
-        st.markdown("<h3 style='color:#F8FAFC;'>Top Positive Signals</h3>", unsafe_allow_html=True)
+        st.markdown("<h4 style='color:#22C55E; margin-bottom:16px;'>✔️ Positive Engagement Signals</h4>", unsafe_allow_html=True)
         for name, count in signal_counts.items():
             st.markdown(_render_bar(name, count, signal_max), unsafe_allow_html=True)
 
     with col_right:
-        st.markdown("<h3 style='color:#F8FAFC;'>Top Outreach Blockers</h3>", unsafe_allow_html=True)
+        st.markdown("<h4 style='color:#F59E0B; margin-bottom:16px;'>⚠️ Common Blockers</h4>", unsafe_allow_html=True)
         for name, count in blocker_counts.items():
             st.markdown(_render_bar(name, count, blocker_max), unsafe_allow_html=True)
 
-    st.markdown("---")
-
-    st.markdown("<h3 style='color:#F8FAFC;'>Top 10 Ready-To-Call Prospects</h3>", unsafe_allow_html=True)
+    st.markdown("")
+    st.markdown(
+        "<h2 style='color:#F8FAFC; margin-bottom:4px; font-size:1.3rem;'>Top 10 Ready-To-Call Prospects</h2>"
+        "<p style='color:#94A3B8; margin:0 0 20px;'>Highest readiness scores with clean data and clear engagement signals</p>",
+        unsafe_allow_html=True
+    )
+    
     candidate_df = df[(df["eligibility_status"] == "Eligible") & (~df.get("structural_block_flag", False))].copy()
     candidate_df = candidate_df.sort_values(by="readiness_score", ascending=False).head(10)
     candidate_df["Rank"] = range(1, len(candidate_df) + 1)
@@ -136,10 +211,10 @@ def render_dashboard():
         use_container_width=True,
         hide_index=True,
         column_config={
-            "Rank": "Rank",
-            "Name": "Prospect",
-            "Company": "Company",
-            "Readiness": st.column_config.NumberColumn("Readiness", format="%.1f"),
-            "Reason": "Primary Signal"
+            "Rank": st.column_config.NumberColumn("Rank", width="small"),
+            "Name": st.column_config.TextColumn("Prospect", width="medium"),
+            "Company": st.column_config.TextColumn("Company", width="medium"),
+            "Readiness": st.column_config.NumberColumn("Score", format="%.1f", width="small"),
+            "Reason": st.column_config.TextColumn("Primary Signal")
         }
     )

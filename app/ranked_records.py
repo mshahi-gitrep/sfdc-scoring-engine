@@ -45,9 +45,13 @@ def _primary_reason(row: pd.Series) -> str:
 
 def render_ranked_records():
     """Renders the Opportunity Workbench page."""
-    st.markdown("<h1 style='color:#3B82F6; margin-bottom:4px;'>Opportunity Workbench</h1>", unsafe_allow_html=True)
-    st.markdown("Prioritized outreach recommendations ranked by business readiness.")
-    st.markdown("---")
+    st.markdown(
+        "<div style='margin-bottom:28px;'>"
+        "<h1 style='color:#3B82F6; margin:0 0 8px; font-size:2.4rem;'>Opportunity Workbench</h1>"
+        "<p style='color:#94A3B8; margin:0; font-size:1.05rem; line-height:1.6;'>Deep-dive view of prioritized opportunities. Filter by readiness level, account, seniority, and engagement to build your daily outreach list.</p>"
+        "</div>",
+        unsafe_allow_html=True
+    )
 
     df, _, _, _ = load_unified_data()
     df["company_name"] = df.get("account_name").fillna(df.get("account_id")).fillna("Unknown Company")
@@ -62,21 +66,26 @@ def render_ranked_records():
         df.get("broken_conversion_link_flag", False)
     )
 
+    st.markdown(
+        "<h3 style='color:#F8FAFC; margin:24px 0 16px; font-size:1.1rem;'>Filters</h3>",
+        unsafe_allow_html=True
+    )
+
     col_search, col_readiness, col_account, col_seniority = st.columns(4)
     with col_search:
-        search_query = st.text_input("Search prospect", "", help="Name, email, or account match.")
+        search_query = st.text_input("Search", "", placeholder="Name or company...", help="Name, email, or account match.")
     with col_readiness:
-        readiness_filter = st.selectbox("Readiness", ["All", "Call Today", "Nurture", "Do Not Call"], index=0)
+        readiness_filter = st.selectbox("Readiness", ["All", "Call Today", "Nurture", "Do Not Call"], index=0, label_visibility="collapsed")
     with col_account:
-        account_filter = st.selectbox("Account", ["All", "Strategic Accounts only", "Standard accounts only"], index=0)
+        account_filter = st.selectbox("Account", ["All", "Strategic Accounts only", "Standard accounts only"], index=0, label_visibility="collapsed")
     with col_seniority:
-        seniority_filter = st.selectbox("Seniority", ["All", "Director+", "Manager / Mid", "Individual Contributor"], index=0)
+        seniority_filter = st.selectbox("Seniority", ["All", "Director+", "Manager / Mid", "Individual Contributor"], index=0, label_visibility="collapsed")
 
     col_activity, col_quality = st.columns(2)
     with col_activity:
-        recent_activity = st.selectbox("Recent Activity", ["All", "Last 7 days", "Last 30 days", "Older than 30 days"], index=0)
+        recent_activity = st.selectbox("Recent Activity", ["All", "Last 7 days", "Last 30 days", "Older than 30 days"], index=0, label_visibility="collapsed")
     with col_quality:
-        data_quality = st.selectbox("Data Quality", ["All", "Clean", "Needs Cleanup", "Blocked"], index=0)
+        data_quality = st.selectbox("Data Quality", ["All", "Clean", "Needs Cleanup", "Blocked"], index=0, label_visibility="collapsed")
 
     filtered_df = df.copy()
     if search_query:
@@ -129,9 +138,13 @@ def render_ranked_records():
     
     # LEFT COLUMN: Interactive table with row selection
     with left_col:
-        st.markdown(f"**{len(filtered_df):,} prioritized opportunities found.** Click any row to view details →")
+        st.markdown(
+            f"<h3 style='color:#F8FAFC; margin:24px 0 16px;'>{len(filtered_df):,} Opportunities Found</h3>"
+            "<p style='color:#94A3B8; margin:-12px 0 16px; font-size:0.95rem;'>Click a row below to view full details →</p>",
+            unsafe_allow_html=True
+        )
         display_df = filtered_df[["Rank", "full_name", "company_name", "readiness_score", "Recommended Action", "Primary Reason"]].copy()
-        display_df.columns = ["Rank", "Person", "Company", "Readiness", "Recommended Action", "Primary Reason"]
+        display_df.columns = ["Rank", "Person", "Company", "Readiness", "Action", "Primary Signal"]
         
         # Create a simple selection mechanism using row index
         selection = st.selectbox(
@@ -147,39 +160,56 @@ def render_ranked_records():
             use_container_width=True,
             hide_index=True,
             column_config={
-                "Readiness": st.column_config.NumberColumn("Readiness", format="%.1f"),
-                "Recommended Action": st.column_config.TextColumn("Recommended Action"),
-                "Primary Reason": st.column_config.TextColumn("Primary Reason")
+                "Rank": st.column_config.NumberColumn("Rank", width="small"),
+                "Person": st.column_config.TextColumn("Person", width="medium"),
+                "Company": st.column_config.TextColumn("Company", width="medium"),
+                "Readiness": st.column_config.NumberColumn("Score", format="%.1f", width="small"),
+                "Action": st.column_config.TextColumn("Action", width="medium"),
+                "Primary Signal": st.column_config.TextColumn("Signal")
             }
         )
 
     # RIGHT COLUMN: Dynamic detail panel
     with right_col:
-        st.markdown("<h3 style='color:#F8FAFC;'>📋 Prospect Details</h3>", unsafe_allow_html=True)
+        st.markdown(
+            "<h3 style='color:#F8FAFC; margin:24px 0 16px;'>📋 Prospect Details</h3>",
+            unsafe_allow_html=True
+        )
         
         selected_row = filtered_df.iloc[selection]
         st.session_state["selected_prospect_id"] = selected_row["master_person_id"]
         
-        st.markdown(f"<h2 style='color:#F8FAFC; margin:0;'>{selected_row['full_name']}</h2>", unsafe_allow_html=True)
-        st.markdown(f"<p style='color:#94A3B8; margin-top:4px;'>{selected_row['company_name']}</p>", unsafe_allow_html=True)
-        st.markdown(f"<p style='margin:12px 0 4px;'><strong>Readiness:</strong> {selected_row['readiness_score']:.1f} / 100</p>", unsafe_allow_html=True)
-        st.markdown(f"<p style='margin:4px 0 4px;'><strong>Action:</strong> {selected_row['Recommended Action']}</p>", unsafe_allow_html=True)
-        st.markdown(f"<p style='margin:4px 0 4px;'><strong>Confidence:</strong> {selected_row['Confidence']}</p>", unsafe_allow_html=True)
+        st.markdown(
+            f"<h2 style='color:#F8FAFC; margin:0 0 4px; font-size:1.4rem;'>{selected_row['full_name']}</h2>"
+            f"<p style='color:#3B82F6; margin:0 0 12px; font-weight:600;'>{selected_row['company_name']}</p>",
+            unsafe_allow_html=True
+        )
+        
+        st.markdown(
+            f"<div style='padding:16px; border-radius:12px; background:rgba(34,197,94,0.1); border:1px solid rgba(34,197,94,0.2); margin-bottom:12px;'>"
+            f"<p style='margin:0; color:#94A3B8; font-size:0.85rem;'>Readiness Score</p>"
+            f"<p style='margin:4px 0 0; color:#22C55E; font-weight:700; font-size:1.3rem;'>{selected_row['readiness_score']:.1f} / 100</p>"
+            "</div>",
+            unsafe_allow_html=True
+        )
+        
+        st.markdown(f"**Recommended:** {selected_row['Recommended Action']}")
+        st.markdown(f"**Confidence:** {selected_row['Confidence']}")
         
         if selected_row.get("agentic_recommendation_available"):
             st.markdown("---")
-            st.markdown("<h4 style='color:#F8FAFC;'>🤖 AI Insights</h4>", unsafe_allow_html=True)
+            st.markdown("<h4 style='color:#3B82F6; margin:12px 0 8px;'>🤖 AI Insights</h4>", unsafe_allow_html=True)
             st.markdown(f"**Why:** {selected_row.get('why_summary', 'N/A')}")
-            st.markdown(f"**Why now:** {selected_row.get('why_now_summary', 'N/A')}")
-            st.markdown(f"**Signal source:** {selected_row.get('where_signal_summary', 'N/A')}")
+            st.markdown(f"**Now:** {selected_row.get('why_now_summary', 'N/A')}")
+            st.markdown(f"**Signal:** {selected_row.get('where_signal_summary', 'N/A')}")
             if selected_row.get('risk_note'):
                 st.markdown(f"**⚠️ Risk:** {selected_row.get('risk_note')}")
         
         st.markdown("---")
-        st.markdown("<h4 style='color:#F8FAFC;'>📊 Key Signals</h4>", unsafe_allow_html=True)
-        st.markdown(f"- **Activity:** {int(selected_row.get('days_since_last_response', 0))} days since last response")
-        st.markdown(f"- **Account:** {'Strategic' if selected_row.get('is_named_account', False) else 'Standard'}")
-        st.markdown(f"- **Data quality:** {'<span style=\"color:#F59E0B;\">⚠️ Needs cleanup</span>' if selected_row.get('dq_flag') else '<span style=\"color:#22C55E;\">✓ Clean</span>'}", unsafe_allow_html=True)
+        st.markdown("<h4 style='color:#F8FAFC; margin:12px 0 8px;'>Key Signals</h4>", unsafe_allow_html=True)
+        st.markdown(f"- **Activity:** {int(selected_row.get('days_since_last_response', 0))} days")
+        st.markdown(f"- **Type:** {'Strategic' if selected_row.get('is_named_account', False) else 'Standard'}")
+        st.markdown(f"- **Quality:** {'<span style=\"color:#F59E0B;\">⚠️ Cleanup</span>' if selected_row.get('dq_flag') else '<span style=\"color:#22C55E;\">✓ Clean</span>'}", unsafe_allow_html=True)
         
         if selected_row.get("top_positive_reasons"):
             st.markdown("**Strengths:**")
