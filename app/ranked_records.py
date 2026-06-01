@@ -113,7 +113,7 @@ def render_ranked_records():
 
     filtered_df = filtered_df.sort_values(by="readiness_score", ascending=False).reset_index(drop=True)
     filtered_df["Rank"] = filtered_df.index + 1
-    filtered_df["Recommended Action"] = filtered_df.apply(_recommended_action, axis=1)
+    filtered_df["Recommended Action"] = filtered_df.apply(lambda row: row.get("recommended_action") if row.get("agentic_recommendation_available") else _recommended_action(row), axis=1)
     filtered_df["Confidence"] = filtered_df["readiness_score"].apply(_confidence_label)
     filtered_df["Primary Reason"] = filtered_df.apply(_primary_reason, axis=1)
 
@@ -158,6 +158,12 @@ def render_ranked_records():
         st.markdown(f"<p style='margin:12px 0 4px;'><strong>Recommended Action:</strong> {selected_row['Recommended Action']}</p>", unsafe_allow_html=True)
         st.markdown(f"<p style='margin:4px 0 4px;'><strong>Confidence:</strong> {selected_row['Confidence']}</p>", unsafe_allow_html=True)
         st.markdown(f"<p style='margin:4px 0 4px;'><strong>Primary Reason:</strong> {selected_row['Primary Reason']}</p>", unsafe_allow_html=True)
+        if selected_row.get("agentic_recommendation_available"):
+            st.markdown(f"<p style='margin:4px 0 4px;'><strong>Why summary:</strong> {selected_row.get('why_summary', 'N/A')}</p>", unsafe_allow_html=True)
+            st.markdown(f"<p style='margin:4px 0 4px;'><strong>Why now:</strong> {selected_row.get('why_now_summary', 'N/A')}</p>", unsafe_allow_html=True)
+            st.markdown(f"<p style='margin:4px 0 4px;'><strong>Signal source:</strong> {selected_row.get('where_signal_summary', 'N/A')}</p>", unsafe_allow_html=True)
+            if selected_row.get('risk_note'):
+                st.markdown(f"<p style='margin:4px 0 4px;'><strong>Risk note:</strong> {selected_row.get('risk_note')}</p>", unsafe_allow_html=True)
         st.markdown("<hr style='border-top:1px solid rgba(255,255,255,0.08);'>", unsafe_allow_html=True)
         st.markdown("<p style='margin:0 0 8px; color:#94A3B8;'>Key signals for this prospect are summarized below.</p>", unsafe_allow_html=True)
         st.markdown(f"- Readiness score: <strong>{selected_row['readiness_score']:.1f}</strong> / 100", unsafe_allow_html=True)

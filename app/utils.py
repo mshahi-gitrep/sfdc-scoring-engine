@@ -39,6 +39,8 @@ def load_unified_data() -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.Da
     cm_df = pd.read_csv(campaign_members_path)
     accounts_df = pd.read_csv(accounts_path)
     entity_map_df = pd.read_csv(entity_resolution_map_path)
+    recommendations_path = "data/processed/person_agent_recommendations.csv"
+    recommendations_df = pd.read_csv(recommendations_path) if os.path.exists(recommendations_path) else pd.DataFrame()
 
     # Enrich raw CampaignMember data with master_person_id from entity resolution output
     if "entity_id" in cm_df.columns and "raw_entity_id" in entity_map_df.columns and "master_person_id" in entity_map_df.columns:
@@ -99,6 +101,12 @@ def load_unified_data() -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.Da
         unified_df.get("shared_mailbox_flag", False) |
         unified_df.get("broken_conversion_link_flag", False)
     )
+
+    if not recommendations_df.empty:
+        unified_df = pd.merge(unified_df, recommendations_df, on="master_person_id", how="left")
+        unified_df["agentic_recommendation_available"] = unified_df["why_summary"].notnull()
+    else:
+        unified_df["agentic_recommendation_available"] = False
 
     return unified_df, cm_df, accounts_df, master_df
 

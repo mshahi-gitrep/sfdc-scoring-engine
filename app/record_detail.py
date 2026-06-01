@@ -5,9 +5,25 @@ Transforms the 360° record detail into an executive briefing document for
 BDRs, sales leadership, and non-technical stakeholders.
 """
 
+import ast
 import pandas as pd
 import streamlit as st
 from app.utils import load_unified_data
+
+
+def _normalize_talking_points(value):
+    if isinstance(value, list):
+        return value
+    if isinstance(value, str):
+        if value.startswith("[") and value.endswith("]"):
+            try:
+                return list(ast.literal_eval(value))
+            except Exception:
+                return [value]
+        if "," in value:
+            return [item.strip() for item in value.split(",") if item.strip()]
+        return [value]
+    return []
 
 
 def _recommended_action(row: pd.Series) -> str:
@@ -100,7 +116,7 @@ def render_record_detail():
 
     row = df[df["master_person_id"] == mpid].iloc[0]
     company_name = row["company_name"]
-    action_text = _recommended_action(row)
+    action_text = row.get("recommended_action") if row.get("agentic_recommendation_available") else _recommended_action(row)
     confidence_text = _confidence_label(row["readiness_score"])
     confidence_pct = _confidence_pct(row["readiness_score"])
 
@@ -148,16 +164,29 @@ def render_record_detail():
             st.markdown("No major blockers found.")
 
     st.markdown("---")
-    track = _talk_track(row, company_name)
-    st.markdown("<h3 style='color:#F8FAFC;'>BDR Recommended Talk Track</h3>", unsafe_allow_html=True)
-    st.markdown(f"**Opening statement:** {track['opening']}")
-    st.markdown("**Likely pain points:**")
-    for pain in track['pain_points']:
-        st.markdown(f"- {pain}")
-    st.markdown("**Suggested questions:**")
-    for question in track['questions']:
-        st.markdown(f"- {question}")
-    st.markdown(f"**Reason for outreach:** {track['reason']}")
+    if row.get("agentic_recommendation_available"):
+        st.markdown("<h3 style='color:#F8FAFC;'>Agentic Recommendation Summary</h3>", unsafe_allow_html=True)
+        st.markdown(row.get("why_summary", "No summary available."))
+        st.markdown(f"**Why now:** {row.get('why_now_summary', 'No recent evidence summary available.')}" )
+        st.markdown(f"**Signal source:** {row.get('where_signal_summary', 'No campaign signal summary available.')}" )
+        if row.get("risk_note"):
+            st.markdown(f"**Risk note:** {row.get('risk_note')}")
+        talking_points = _normalize_talking_points(row.get("talking_points", ""))
+        if talking_points:
+            st.markdown("**Recommended talking points:**")
+            for point in talking_points:
+                st.markdown(f"- {point}")
+    else:
+        track = _talk_track(row, company_name)
+        st.markdown("<h3 style='color:#F8FAFC;'>BDR Recommended Talk Track</h3>", unsafe_allow_html=True)
+        st.markdown(f"**Opening statement:** {track['opening']}")
+        st.markdown("**Likely pain points:**")
+        for pain in track['pain_points']:
+            st.markdown(f"- {pain}")
+        st.markdown("**Suggested questions:**")
+        for question in track['questions']:
+            st.markdown(f"- {question}")
+        st.markdown(f"**Reason for outreach:** {track['reason']}")
 
     st.markdown("---")
     st.markdown("<h3 style='color:#F8FAFC;'>Timeline of Engagement</h3>", unsafe_allow_html=True)

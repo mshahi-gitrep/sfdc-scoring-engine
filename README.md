@@ -30,9 +30,15 @@ CRM Readiness Intelligence Platform for Salesforce-style synthetic data, scoring
 - `Prospect Brief`
 - `How The Readiness Model Works`
 
+## Deployment
+
+- GitHub repository: https://github.com/mshahi-gitrep/sfdc-scoring-engine
+- Streamlit public app: https://sfdc-scoring-engine-leadenrichment.streamlit.app/
+
 ## Documentation
 
 - `docs/INDEX.md`
 - `docs/ARCHITECTURE.md`
 - `docs/COMPONENT_DIAGRAMS.md`
 - `docs/DEPLOYMENT_INTEGRATION.md`
+- `knowledge_base/agent_behaviour_and_guardrails.md`
