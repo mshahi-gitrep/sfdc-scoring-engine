@@ -8,7 +8,6 @@ using pandas and faker. It enforces industrial data correlations:
 - Ideal Customer Profile (ICP) qualified accounts are more likely to have high intent scores.
 - Intent scores are generated using non-uniform triangular distributions.
 
-Author: Senior Data Engineer
 """
 
 import os

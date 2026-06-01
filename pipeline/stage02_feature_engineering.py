@@ -11,7 +11,6 @@ master_person_id. It incorporates three advanced business layers:
 Outputs:
 - data/processed/person_features.csv
 
-Author: Senior Data Engineer
 """
 
 import os

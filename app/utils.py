@@ -4,7 +4,6 @@ Utility Module for Streamlit Application.
 This module centralizes data loading, Plotly telemetry charts construction, 
 and the core Sensitivity Simulation Engine for the Reviewer Playground.
 
-Author: Senior Data Engineer
 """
 
 import os

@@ -4,7 +4,6 @@ Synced Knowledge Base Submodule for Streamlit Application.
 Programmatically reads and renders active markdown technical documentation
 directly from the disk, ensuring zero documentation drift.
 
-Author: Senior Data Engineer
 """
 
 import os

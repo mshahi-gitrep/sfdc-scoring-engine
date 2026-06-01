@@ -10,7 +10,6 @@ to Accounts, Leads, and Contacts. It implements advanced CRM properties:
   Buying Committees, High-Intent Accounts get higher responses, and exactly 10%
   of high-intent accounts show coordinated recent 14-day surges.
 
-Author: Senior Data Engineer
 """
 
 import os

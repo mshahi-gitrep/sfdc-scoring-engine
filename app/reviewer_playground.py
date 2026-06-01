@@ -4,7 +4,6 @@ Reviewer Playground Submodule for Streamlit Application.
 Renders slider/checkbox controls to modify engagement and account assumptions,
 running live sensitivity calculations to plot delta comparisons in real-time.
 
-Author: Senior Data Engineer
 """
 
 import streamlit as st

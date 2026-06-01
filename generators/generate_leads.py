@@ -8,7 +8,6 @@ Salesforce Lead records using pandas and faker. It simulates complex CRM dynamic
 - Deliberate injection of real-world Data Quality (DQ) anomalies (DQ-1, DQ-2, DQ-4, DQ-6, DQ-7, DQ-9).
 - Explicit injection of 8 deterministic archetype personas (A-H).
 
-Author: Senior Data Engineer
 """
 
 import os

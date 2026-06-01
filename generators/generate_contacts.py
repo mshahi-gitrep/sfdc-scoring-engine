@@ -9,7 +9,6 @@ using pandas and faker. It establishes relational consistency:
 - Data Quality issues modeled: DQ-1 (broken conversion links), DQ-7 (completeness gaps),
   and DQ-9 (opt-out and no_longer_with_company markers).
 
-Author: Senior Data Engineer
 """
 
 import os
