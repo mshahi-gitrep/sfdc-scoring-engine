@@ -1,5 +1,7 @@
 # Salesforce Data Model
 
+For a visual entity relationship diagram, see [ER_DIAGRAM.md](./ER_DIAGRAM.md).
+
 Account
 ├── Contact
 │   └── CampaignMember

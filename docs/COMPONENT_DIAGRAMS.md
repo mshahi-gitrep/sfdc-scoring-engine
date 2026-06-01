@@ -645,144 +645,118 @@ Shared Utils (utils.py)
 
 ### 9.1 Entity-Relationship Overview
 
+For a visual ER layout, see [ER_DIAGRAM.md](./ER_DIAGRAM.md).
+
 ```
 DATA MODEL - KEY ENTITIES & RELATIONSHIPS
 ════════════════════════════════════════════
 
-┌──────────────────────┐         ┌──────────────────────┐
-│   ACCOUNTS           │◄────────│    CONTACTS          │
-├──────────────────────┤ 1     * ├──────────────────────┤
-│ account_id (PK)      │         │ contact_id (PK)      │
-│ account_name         │         │ account_id (FK)      │
-│ industry             │         │ email                │
-│ employee_count       │         │ first_name           │
-│ annual_revenue       │         │ last_name            │
-│ country              │         │ title                │
-│ is_icp_qualified     │         │ job_persona          │
-│ is_named_account     │         │ job_level            │
-│ intent_score         │         │ mql_date             │
-│ do_not_contact       │         │ has_opted_out        │
-│ created_date         │         │ created_date         │
-│ buying_committee_size│         │ dq_flags (JSON)      │
-│ account_created_date │         │ (+ scoring columns)  │
-│ dq_flags (JSON)      │         └──────────────────────┘
-│ (+ scoring columns)  │
-└──────────────────────┘
+RAW SOURCE ENTITIES
+┌──────────────────────┐      ┌──────────────────────────────────┐      ┌──────────────────────────────┐
+│   ACCOUNTS           │      │   CONTACTS                       │      │   LEADS                      │
+├──────────────────────┤1    *├──────────────────────────────────┤      ├──────────────────────────────┤
+│ account_id (PK)      │──────│ contact_id (PK)                  │      │ lead_id (PK)                 │
+│ account_name         │      │ account_id (FK)                  │      │ email                        │
+│ industry             │      │ email                            │      │ first_name                   │
+│ employee_count       │      │ first_name                       │      │ last_name                    │
+│ annual_revenue       │      │ last_name                        │      │ title                        │
+│ country              │      │ title                            │      │ company                      │
+│ is_icp_qualified     │      │ contact_status                   │      │ job_persona                  │
+│ is_named_account     │      │ job_persona                      │      │ job_level                    │
+│ intent_score         │      │ job_level                        │      │ lead_status                  │
+│ do_not_contact       │      │ mql_date                         │      │ lead_source                  │
+│ created_date         │      │ mkto_contact_score               │      │ is_converted                 │
+│ buying_committee_size│      │ has_lead_origin                  │      │ converted_contact_id (FK)    │
+│ dq_flags (JSON)      │      │ primary_lead_id (FK)             │      │ has_opted_out                │
+│ (+ score fields)     │      │ no_longer_with_company           │      │ email_bounced                │
+└──────────────────────┘      │ has_opted_out                    │      │ created_date                 │
+                               └──────────────────────────────────┘      │ mql_date                     │
+                                                                     │ dq_flags (JSON)              │
+                                                                     │ (+ score fields)             │
+                                                                     └──────────────────────────────┘
 
-        │                                   │
-        │ (indirect via                     │ (1)
-        │  email_domain                     │
-        │  matching)                        │
-        │                                   ▼
-        │                    ┌──────────────────────────┐
-        │                    │   LEADS                  │
-        │                    ├──────────────────────────┤
-        │                    │ lead_id (PK)             │
-        │                    │ email                    │
-        │                    │ first_name               │
-        │                    │ last_name                │
-        │                    │ title                    │
-        │                    │ company                  │
-        │                    │ lead_status              │
-        │                    │ lead_source              │
-        │                    │ job_persona              │
-        │                    │ job_level                │
-        │                    │ is_converted             │
-        │                    │ converted_contact_id (FK)├────┐
-        │                    │ mkto_lead_score          │    │
-        │                    │ has_opted_out            │    │
-        │                    │ email_bounced            │    │
-        │                    │ created_date             │    │
-        │                    │ mql_date                 │    │
-        │                    │ dq_flags (JSON)          │    │
-        │                    │ (+ scoring columns)      │    │
-        │                    └──────────────────────────┘    │
-        │                                                    │
-        └─(1)─ Link ─ (1)───────────────────────────────────┘
-              (email-based)
-              (broken in 20%
-               of cases)
+        ▲                                     ▲                     ▲
+        │                                     │                     │
+        │                                     │                     │
+        │                                     │                     │
+        │                                     │                     │
+        │                                     │                     │
+        │                                     │                     │
+        │                                     │                     │
+        │                                     │                     │
+        │  1..* mapped via raw entity ids    │                     │
+        │                                     │                     │
+        │                                     │                     │
+┌───────────────────────────────────────────────────────────────────────────────────────┐
+│ MASTER_PERSON                                                                       │
+├───────────────────────────────────────────────────────────────────────────────────────┤
+│ master_person_id (PK)                                                                │
+│ preferred_entity_id                                                                  │
+│ preferred_entity_type                                                                │
+│ lead_id                                                                             │
+│ contact_id                                                                          │
+│ email                                                                               │
+│ normalized_email                                                                    │
+│ account_id (FK)                                                                     │
+│ has_lead_record                                                                     │
+│ has_contact_record                                                                  │
+│ is_connected_pair                                                                   │
+│ broken_conversion_link_flag                                                         │
+│ duplicate_email_flag                                                                │
+│ shared_mailbox_flag                                                                 │
+│ entity_resolution_confidence                                                        │
+└───────────────────────────────────────────────────────────────────────────────────────┘
+        ▲
+        │ 1..* maps
+        │
+┌───────────────────────────────────────────────────┐
+│ ENTITY_RESOLUTION_MAP                              │
+├───────────────────────────────────────────────────┤
+│ raw_entity_id (PK)                                 │
+│ master_person_id (FK)                              │
+│ entity_type (Lead/Contact)                         │
+└───────────────────────────────────────────────────┘
 
-┌──────────────────────────────┐
-│  CAMPAIGN_MEMBERS            │
-├──────────────────────────────┤
-│ cm_id (PK)                   │
-│ entity_id (FK - L or C)      │
-│ entity_type (Lead/Contact)   │
-│ account_id (FK - optional)   │
-│ campaign_name                │
-│ campaign_type                │
-│ member_status                │
-│ is_responded                 │
-│ response_date                │
-│ is_active                    │
-│ created_date                 │
-│ email_type (if applicable)   │
-│ sent_date                    │
-│ open_count                   │
-│ click_count                  │
-└──────────────────────────────┘
-        ▲                    ▲
-        │ (*) many           │ (*) many
-        │                    │
-        └────────┬───────────┘
-                 │ aggregated in
-        Stage 02 & 03
+PROCESSED PERSON MODEL
+──────────────────────────────────────────────────────────────────────────────────────
+┌───────────────────────────────────────────────────┐      ┌──────────────────────────────────────┐
+│ PERSON_FEATURES                                   │      │ PERSON_SCORES                        │
+├───────────────────────────────────────────────────┤1    1├──────────────────────────────────────┤
+│ master_person_id (PK)                             │──────│ master_person_id (PK, FK)            │
+│ account_id (FK)                                   │      │ engagement_score                     │
+│ engagement_30d                                    │      │ recency_score                        │
+│ recency_30d                                       │      │ profile_fit_score                    │
+│ persona_senior                                    │      │ account_score                        │
+│ is_named_account                                  │      │ readiness_score                      │
+│ profile_completeness                              │      │ score_percentile                     │
+│ account_intent_signal                             │      │ priority_tier                        │
+│ account_growth                                    │      │ readiness_band                       │
+│ additional feature columns                        │      │ eligibility_status                   │
+└───────────────────────────────────────────────────┘      │ structural_block_flag               │
+                                                             │ top_positive_reasons                 │
+                                                             │ top_negative_reasons                 │
+                                                             └──────────────────────────────────────┘
 
+┌───────────────────────────────────────────────────────────────┐
+│ PERSON_AGENT_RECOMMENDATIONS                                  │
+├───────────────────────────────────────────────────────────────┤
+│ master_person_id (PK, FK)                                     │
+│ why_summary                                                   │
+│ where_signal_summary                                          │
+│ recommended_action                                            │
+│ why_now_summary                                               │
+│ talking_points                                                │
+│ risk_note                                                     │
+└───────────────────────────────────────────────────────────────┘
 
-SCORING OUTPUT MODEL
-────────────────────
+NOTES
+─────
+- `CAMPAIGN_MEMBERS` links to both `LEADS` and `CONTACTS` by `entity_id` + `entity_type`.
+- `MASTER_PERSON` is the unified entity produced by Stage 01 entity resolution.
+- `PERSON_FEATURES` and `PERSON_SCORES` are joined by `master_person_id` for scoring and UI consumption.
+- `PERSON_AGENT_RECOMMENDATIONS` stores the AI-friendly explainers used by the Opportunity Workbench and Prospect Brief pages.
 
-Combined Output Table (one row per entity):
-├─ Core Identity
-│  ├─ entity_id (lead_id or contact_id)
-│  ├─ entity_type (Lead or Contact)
-│  ├─ email
-│  └─ name
-├─ Linkage
-│  ├─ account_id
-│  ├─ account_name
-│  └─ converted_contact_id (if lead)
-├─ Engagement Features
-│  ├─ engagement_count_30d
-│  ├─ engagement_count_60d
-│  ├─ engagement_count_90d
-│  ├─ engagement_count_all_time
-│  ├─ engagement_types (comma-separated)
-│  └─ last_engagement_date
-├─ Recency Features
-│  ├─ days_since_engagement
-│  ├─ recency_score (0-100)
-│  └─ is_stale (bool)
-├─ Profile Features
-│  ├─ job_persona
-│  ├─ job_level
-│  ├─ title_seniority
-│  ├─ profile_completeness (%)
-│  └─ is_icp_account (bool)
-├─ Account Features
-│  ├─ account_intent_score
-│  ├─ is_named_account
-│  ├─ buying_committee_size
-│  └─ account_growth
-├─ SCORING OUTPUTS (final)
-│  ├─ engagement_score (0-100)
-│  ├─ recency_score (0-100)
-│  ├─ profile_fit_score (0-100)
-│  ├─ account_intent_score (0-100)
-│  ├─ readiness_score (0-100)
-│  └─ readiness_tier (High/Medium/Low)
-├─ Explanation Outputs
-│  ├─ top_positive_factors (JSON list)
-│  ├─ top_negative_factors (JSON list)
-│  ├─ dq_flags (JSON list)
-│  ├─ recommended_actions (JSON list)
-│  └─ explanation_narrative (text)
-└─ Metadata
-   ├─ created_date
-   ├─ scoring_date
-   └─ scoring_version
-```
+``` 
 
 ---
 
