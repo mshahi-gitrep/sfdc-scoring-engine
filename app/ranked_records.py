@@ -31,6 +31,10 @@ def _confidence_label(score: float) -> str:
 
 
 def _primary_reason(row: pd.Series) -> str:
+    if row.get("agentic_recommendation_available"):
+        summary = str(row.get("why_summary", "")).split(".")[0]
+        return summary if summary else "Strong readiness signal"
+    
     negative_reasons = [r for r in str(row.get("top_negative_reasons", "")).split(", ") if r and r != "None"]
     if row.get("dq_flag") and negative_reasons:
         return negative_reasons[0]
@@ -117,11 +121,27 @@ def render_ranked_records():
     filtered_df["Confidence"] = filtered_df["readiness_score"].apply(_confidence_label)
     filtered_df["Primary Reason"] = filtered_df.apply(_primary_reason, axis=1)
 
-    left_col, right_col = st.columns([2.2, 1])
+    if filtered_df.empty:
+        st.info("No opportunities match the current filters. Broaden the selection to see recommended prospects.")
+        return
+
+    left_col, right_col = st.columns([2.2, 1.8])
+    
+    # LEFT COLUMN: Interactive table with row selection
     with left_col:
-        st.markdown(f"**{len(filtered_df):,} prioritized opportunities found.**")
+        st.markdown(f"**{len(filtered_df):,} prioritized opportunities found.** Click any row to view details →")
         display_df = filtered_df[["Rank", "full_name", "company_name", "readiness_score", "Recommended Action", "Primary Reason"]].copy()
         display_df.columns = ["Rank", "Person", "Company", "Readiness", "Recommended Action", "Primary Reason"]
+        
+        # Create a simple selection mechanism using row index
+        selection = st.selectbox(
+            "Select prospect from table",
+            range(len(display_df)),
+            format_func=lambda i: f"{display_df.iloc[i]['Rank']}. {display_df.iloc[i]['Person']} — {display_df.iloc[i]['Company']}",
+            label_visibility="collapsed",
+            key="prospect_selection"
+        )
+        
         st.dataframe(
             display_df,
             use_container_width=True,
@@ -133,53 +153,42 @@ def render_ranked_records():
             }
         )
 
+    # RIGHT COLUMN: Dynamic detail panel
     with right_col:
-        st.markdown("<div style='padding:18px; border-radius:16px; background:#0E1728; border:1px solid rgba(255,255,255,0.08);'>"
-                    "<h3 style='color:#F8FAFC; margin-top:0;'>Why This Person Is Prioritized</h3>"
-                    "</div>", unsafe_allow_html=True)
-
-        if filtered_df.empty:
-            st.info("No opportunities match the current filters. Broaden the selection to see recommended prospects.")
-            return
-
-        first_id = filtered_df["master_person_id"].iloc[0]
-        selected_id = st.session_state.get("selected_prospect_id", first_id)
-        if selected_id not in filtered_df["master_person_id"].values:
-            selected_id = first_id
-        options = [f"{row['Rank']}. {row['full_name']} — {row['company_name']}" for _, row in filtered_df.iterrows()]
-        selected_index = int(filtered_df[filtered_df["master_person_id"] == selected_id].index[0])
-        selected_option = st.selectbox("Select prospect", options, index=selected_index)
-        selected_id = filtered_df.iloc[selected_index]["master_person_id"]
-        st.session_state["selected_prospect_id"] = selected_id
-
-        selected_row = filtered_df[filtered_df["master_person_id"] == selected_id].iloc[0]
+        st.markdown("<h3 style='color:#F8FAFC;'>📋 Prospect Details</h3>", unsafe_allow_html=True)
+        
+        selected_row = filtered_df.iloc[selection]
+        st.session_state["selected_prospect_id"] = selected_row["master_person_id"]
+        
         st.markdown(f"<h2 style='color:#F8FAFC; margin:0;'>{selected_row['full_name']}</h2>", unsafe_allow_html=True)
         st.markdown(f"<p style='color:#94A3B8; margin-top:4px;'>{selected_row['company_name']}</p>", unsafe_allow_html=True)
-        st.markdown(f"<p style='margin:12px 0 4px;'><strong>Recommended Action:</strong> {selected_row['Recommended Action']}</p>", unsafe_allow_html=True)
+        st.markdown(f"<p style='margin:12px 0 4px;'><strong>Readiness:</strong> {selected_row['readiness_score']:.1f} / 100</p>", unsafe_allow_html=True)
+        st.markdown(f"<p style='margin:4px 0 4px;'><strong>Action:</strong> {selected_row['Recommended Action']}</p>", unsafe_allow_html=True)
         st.markdown(f"<p style='margin:4px 0 4px;'><strong>Confidence:</strong> {selected_row['Confidence']}</p>", unsafe_allow_html=True)
-        st.markdown(f"<p style='margin:4px 0 4px;'><strong>Primary Reason:</strong> {selected_row['Primary Reason']}</p>", unsafe_allow_html=True)
+        
         if selected_row.get("agentic_recommendation_available"):
-            st.markdown("<h4 style='color:#F8FAFC; margin-bottom:4px;'>AI Insights</h4>", unsafe_allow_html=True)
-            st.markdown(f"<p style='margin:4px 0 4px;'><strong>Summary:</strong> {selected_row.get('why_summary', 'N/A')}</p>", unsafe_allow_html=True)
-            st.markdown(f"<p style='margin:4px 0 4px;'><strong>Why now:</strong> {selected_row.get('why_now_summary', 'N/A')}</p>", unsafe_allow_html=True)
-            st.markdown(f"<p style='margin:4px 0 4px;'><strong>Signal source:</strong> {selected_row.get('where_signal_summary', 'N/A')}</p>", unsafe_allow_html=True)
+            st.markdown("---")
+            st.markdown("<h4 style='color:#F8FAFC;'>🤖 AI Insights</h4>", unsafe_allow_html=True)
+            st.markdown(f"**Why:** {selected_row.get('why_summary', 'N/A')}")
+            st.markdown(f"**Why now:** {selected_row.get('why_now_summary', 'N/A')}")
+            st.markdown(f"**Signal source:** {selected_row.get('where_signal_summary', 'N/A')}")
             if selected_row.get('risk_note'):
-                st.markdown(f"<p style='margin:4px 0 4px;'><strong>Risk note:</strong> {selected_row.get('risk_note')}</p>", unsafe_allow_html=True)
-        st.markdown("<hr style='border-top:1px solid rgba(255,255,255,0.08);'>", unsafe_allow_html=True)
-        st.markdown("<p style='margin:0 0 8px; color:#94A3B8;'>Key signals for this prospect are summarized below.</p>", unsafe_allow_html=True)
-        st.markdown(f"- Readiness score: <strong>{selected_row['readiness_score']:.1f}</strong> / 100", unsafe_allow_html=True)
-        st.markdown(f"- Recent activity: <strong>{int(selected_row.get('days_since_last_response', 0))} days</strong> since last response", unsafe_allow_html=True)
-        st.markdown(f"- Account fit: <strong>{'Strategic' if selected_row.get('is_named_account', False) else 'Standard'}</strong>", unsafe_allow_html=True)
-        if selected_row.get("dq_flag"):
-            st.markdown(f"- Data quality note: <span style='color:#F59E0B;'>Needs cleanup</span>", unsafe_allow_html=True)
-        else:
-            st.markdown(f"- Data quality note: <span style='color:#22C55E;'>Clean profile</span>", unsafe_allow_html=True)
+                st.markdown(f"**⚠️ Risk:** {selected_row.get('risk_note')}")
+        
         st.markdown("---")
+        st.markdown("<h4 style='color:#F8FAFC;'>📊 Key Signals</h4>", unsafe_allow_html=True)
+        st.markdown(f"- **Activity:** {int(selected_row.get('days_since_last_response', 0))} days since last response")
+        st.markdown(f"- **Account:** {'Strategic' if selected_row.get('is_named_account', False) else 'Standard'}")
+        st.markdown(f"- **Data quality:** {'<span style=\"color:#F59E0B;\">⚠️ Needs cleanup</span>' if selected_row.get('dq_flag') else '<span style=\"color:#22C55E;\">✓ Clean</span>'}", unsafe_allow_html=True)
+        
         if selected_row.get("top_positive_reasons"):
+            st.markdown("**Strengths:**")
             for reason in str(selected_row["top_positive_reasons"]).split(", "):
                 if reason and reason != "None":
-                    st.markdown(f"✔️ {reason}")
+                    st.markdown(f"  ✔️ {reason}")
+        
         if selected_row.get("top_negative_reasons"):
+            st.markdown("**Concerns:**")
             for reason in str(selected_row["top_negative_reasons"]).split(", "):
                 if reason and reason != "None":
-                    st.markdown(f"⚠️ {reason}")
+                    st.markdown(f"  ⚠️ {reason}")
