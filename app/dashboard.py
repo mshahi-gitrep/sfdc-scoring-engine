@@ -74,7 +74,7 @@ def render_dashboard():
     
     with col1:
         st.markdown(
-            "<div style='padding:20px; border-radius:14px; background:#F8FAFC; border:1px solid rgba(22,163,74,0.2);'>"
+            "<div style='padding:20px; border-radius:14px; background:#F8FAFC; border:1px solid rgba(22,163,74,0.2); min-height:200px; display:flex; flex-direction:column; justify-content:space-between;'>"
             "<div style='display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;'>"
             "<h3 style='margin:0; color:#1E293B;'>🔥 Priority</h3>"
             "<span style='background:rgba(22,163,74,0.1); color:#16A34A; padding:4px 10px; border-radius:12px; font-size:0.8rem; font-weight:600;'>Ready Now</span>"
@@ -87,7 +87,7 @@ def render_dashboard():
     
     with col2:
         st.markdown(
-            "<div style='padding:20px; border-radius:14px; background:#F8FAFC; border:1px solid rgba(59,130,246,0.2);'>"
+            "<div style='padding:20px; border-radius:14px; background:#F8FAFC; border:1px solid rgba(59,130,246,0.2); min-height:200px; display:flex; flex-direction:column; justify-content:space-between;'>"
             "<div style='display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;'>"
             "<h3 style='margin:0; color:#1E293B;'>⚡ Active</h3>"
             "<span style='background:rgba(59,130,246,0.1); color:#3B82F6; padding:4px 10px; border-radius:12px; font-size:0.8rem; font-weight:600;'>High Priority</span>"
@@ -100,7 +100,7 @@ def render_dashboard():
     
     with col3:
         st.markdown(
-            "<div style='padding:20px; border-radius:14px; background:#F8FAFC; border:1px solid rgba(234,140,28,0.2);'>"
+            "<div style='padding:20px; border-radius:14px; background:#F8FAFC; border:1px solid rgba(234,140,28,0.2); min-height:200px; display:flex; flex-direction:column; justify-content:space-between;'>"
             "<div style='display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;'>"
             "<h3 style='margin:0; color:#1E293B;'>📋 Cleanup</h3>"
             "<span style='background:rgba(234,140,28,0.1); color:#EA8C1C; padding:4px 10px; border-radius:12px; font-size:0.8rem; font-weight:600;'>Action</span>"
@@ -113,7 +113,7 @@ def render_dashboard():
     
     with col4:
         st.markdown(
-            "<div style='padding:20px; border-radius:14px; background:#F8FAFC; border:1px solid rgba(220,38,38,0.2);'>"
+            "<div style='padding:20px; border-radius:14px; background:#F8FAFC; border:1px solid rgba(220,38,38,0.2); min-height:200px; display:flex; flex-direction:column; justify-content:space-between;'>"
             "<div style='display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:12px;'>"
             "<h3 style='margin:0; color:#1E293B;'>🚫 Blocked</h3>"
             "<span style='background:rgba(220,38,38,0.1); color:#DC2626; padding:4px 10px; border-radius:12px; font-size:0.8rem; font-weight:600;'>Hold</span>"
